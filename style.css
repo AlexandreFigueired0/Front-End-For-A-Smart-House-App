@@ -1,69 +1,95 @@
 #container{
-    border: 1px solid black;
+    border: 3px solid white;
     display: grid;
     margin: auto;
-    width: 100%;
-    height: 700px;
     grid-template-columns: 15% auto 15% ;
     grid-template-rows: 65% auto;
     grid-template-areas:
          "menu main signs"
          "menu main security";
+    font-size: 2vw;
+    font-family: sans-serif;
 }
 
 nav{
-    border: 1px solid black;
-    background-color: blueviolet;
+    border-right: 3px solid white;
+    background-color: rgb(130, 254, 254);
     grid-area: menu;
 }
 
-#main{
-    width: 100%;
-    text-align: center;
-    background-color: aqua;
+main{
     grid-area: main;
-    height: inherit;
+    text-align: center;
+    background-color: rgb(130, 254, 254);
 }
 
 #signs{
     grid-area: signs;
-    font-size: 24px;
+    font-size: 1.5vw;
     line-height: 1.5em;
-    background-color: aqua;
+    background-color: rgb(130, 254, 254);
     text-align: center;
 }
 
-#security{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: grey;
+/* meter um hover nos botoes */
+.security{
     grid-area: security;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#security div{
-    text-align: center;
-    
+.button{
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    background-color: rgb(130, 254, 254);
+    text-decoration: none;
 }
 
-#sub-title{
+.button:hover{
+    background-color: rgba(190, 251, 251);
+}
+
+.button a{
+    text-decoration: none;
+}
+
+a{
+    color:inherit;
+}
+
+.sub-title{
+    color: black;
     text-align: center;
-    font-size: 42px;
+    font-size: 1.3em;
 }
 
 #list{
+    line-height: 2em;
     text-align: center;
     list-style: none;
     padding-left: 0px;
 }
 
-li{
-    font-size: 24px;
-    margin: 5px 0;
-    background-color: white;
+#list li{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 img{
     width: 100%;
+    height: 65%;
+}
+
+.back{
+    grid-area: back;
+    background-color: rgb(130, 254, 254);
+    height: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
 }
