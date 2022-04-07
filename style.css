@@ -31,19 +31,24 @@ main{
     text-align: center;
 }
 
-/* meter um hover nos botoes */
+ul a{
+    text-decoration: none;
+}
+
 .security{
     grid-area: security;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: none;
+    border-bottom: none;
 }
 
 .button{
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+    border-style: outset;
+    border: 3px solid white;
     background-color: rgb(130, 254, 254);
-    text-decoration: none;
+    font-size: 1em;
 }
 
 .button:hover{
@@ -62,6 +67,7 @@ a{
     color: black;
     text-align: center;
     font-size: 1.3em;
+    width: 100%;
 }
 
 #list{
@@ -74,8 +80,9 @@ a{
 #list li{
     cursor: pointer;
     margin-bottom: 10px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+    border-left: none;
+    border-right: none;
+    font-size: 0.75em;
 }
 
 img{

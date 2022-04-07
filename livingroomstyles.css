@@ -1,0 +1,79 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15% ;
+    grid-template-rows: 95% auto;
+    grid-template-areas:
+         "menu main signs"
+         "menu back signs";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+#signs{
+    grid-area: signs;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+main{
+    grid-area: main;
+   
+}
+
+#room-container{
+    display: grid;
+    height: 25vh;
+    grid-template-columns: repeat(3,10%) 11% ;
+    grid-template-rows: repeat(2,50%);
+    grid-template-areas: 
+        "lights blinds tv projector"
+        "lights-btn blinds-btn tv-btn projector-btn";
+    justify-content: space-around;
+    align-items: stretch;
+    font-size: 1em;
+}
+
+#lights{
+    grid-area: lights;
+}
+
+#blinds{
+    grid-area: blinds;
+}
+
+#tv{
+    grid-area: tv;
+}
+
+#projector{
+    grid-area: projector;
+}
+
+#lights-btn{
+    grid-area: lights-btn;
+}
+
+#blinds-btn{
+    grid-area: blinds-btn;
+}
+
+#tv-btn{
+    grid-area: tv-btn;
+}
+
+#projector-btn{
+    grid-area: projector-btn;
+}
+
+
+
+button{
+    font-size: .5em;
+    
+}
+
+button:active{
+    border-style: inset;
+}
