@@ -1,5 +1,7 @@
 #container{
-    border: 3px solid white;
+    background: #B993D6; 
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
     display: grid;
     margin: auto;
     grid-template-columns: 15% auto 15% ;
@@ -13,21 +15,18 @@
 
 nav{
     border-right: 3px solid white;
-    background-color: rgb(130, 254, 254);
     grid-area: menu;
 }
 
 main{
     grid-area: main;
     text-align: center;
-    background-color: rgb(130, 254, 254);
 }
 
 #signs{
     grid-area: signs;
     font-size: 1.5vw;
     line-height: 1.5em;
-    background-color: rgb(130, 254, 254);
     text-align: center;
 }
 
@@ -44,16 +43,25 @@ ul a{
     border-bottom: none;
 }
 
-.button{
-    border-style: outset;
-    border: 3px solid white;
-    background-color: rgb(130, 254, 254);
-    font-size: 1em;
-}
+.button {background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%)}
+.button {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
 
-.button:hover{
-    background-color: rgba(190, 251, 251);
-}
+ .button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
 
 .button a{
     text-decoration: none;
@@ -64,7 +72,7 @@ a{
 }
 
 .sub-title{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 1.3em;
     width: 100%;
@@ -92,11 +100,10 @@ img{
 
 .back{
     grid-area: back;
-    background-color: rgb(130, 254, 254);
     height: max-content;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 
 }
