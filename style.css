@@ -1,6 +1,6 @@
+
 #container{
-    background: #B993D6; 
-    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    color: black;
     background: linear-gradient(to right, #8CA6DB, #B993D6);
     display: grid;
     margin: auto;
@@ -14,8 +14,8 @@
 }
 
 nav{
-    border-right: 3px solid white;
     grid-area: menu;
+    border-right: 1px solid white;
 }
 
 main{
@@ -36,61 +36,51 @@ ul a{
 
 .security{
     grid-area: security;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: none;
+    width: fit-content;
 }
 
-.button {background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%)}
-.button {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
-
- .button:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
-
-.button a{
-    text-decoration: none;
-}
-
-a{
-    color:inherit;
+.security div{
+    color: black;
 }
 
 .sub-title{
-    color: white;
     text-align: center;
     font-size: 1.3em;
     width: 100%;
 }
 
 #list{
-    line-height: 2em;
-    text-align: center;
     list-style: none;
+    line-height: 2em;
     padding-left: 0px;
 }
 
 #list li{
     cursor: pointer;
     margin-bottom: 10px;
-    border-left: none;
-    border-right: none;
     font-size: 0.75em;
+}
+
+.button {
+    color: black;
+    background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%);
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 15px #eee;
+    border-radius: 10px;
+ }
+
+ .button:hover, .button:hover div{
+   background-position: right center;
+   color: white;
+   text-decoration: none;
+ }
+
+.button a{
+    padding: auto 10px;
+    text-decoration: none;
 }
 
 img{
@@ -100,10 +90,8 @@ img{
 
 .back{
     grid-area: back;
-    height: max-content;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
 }
