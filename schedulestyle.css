@@ -72,6 +72,12 @@ main > div{
     text-align: center;
 }
 
+/* aligning checkboxes */
+input[type = checkbox]{
+    position: relative;
+    top: 0.1vw;
+}
+
 #day1{
     grid-area: day1;
 }
