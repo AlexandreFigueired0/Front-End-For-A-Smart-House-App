@@ -2,51 +2,33 @@
 #container{
     color: black;
     background: linear-gradient(to right, #8CA6DB, #B993D6);
-    display: grid;
-    margin: auto;
-    grid-template-columns: 15% auto 15% ;
-    grid-template-rows: 65% auto;
-    grid-template-areas:
-         "menu main signs"
-         "menu main security";
     font-size: 2vw;
     font-family: sans-serif;
+    max-height: inherit;
 }
 
 nav{
-    grid-area: menu;
     border-right: 1px solid white;
 }
 
-main{
-    grid-area: main;
-    text-align: center;
-}
-
 #signs{
-    grid-area: signs;
     font-size: 1.5vw;
     line-height: 1.5em;
+    text-align: center; 
+}
+
+h1{
     text-align: center;
-}
-
-ul a{
-    text-decoration: none;
-}
-
-.security{
-    grid-area: security;
-    width: fit-content;
-}
-
-.security div{
-    color: black;
 }
 
 .sub-title{
     text-align: center;
     font-size: 1.3em;
     width: 100%;
+}
+
+#list a{
+    text-decoration: none;
 }
 
 #list{
@@ -79,17 +61,12 @@ ul a{
  }
 
 .button a{
-    padding: auto 10px;
     text-decoration: none;
 }
 
-img{
-    width: 100%;
-    height: 65%;
-}
-
-.back{
+.back, .back a{
     grid-area: back;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: flex-end;

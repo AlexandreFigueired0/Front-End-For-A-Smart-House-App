@@ -13,16 +13,10 @@ nav{
 
 #signs{
     grid-area: signs;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+
 }
 main{
     grid-area: main;
-}
-
-.sub-title{
-    width: 100%;
 }
 
 #garage-container{
