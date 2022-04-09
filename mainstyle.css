@@ -26,7 +26,7 @@ main{
 
 
 main img{
-    height: 30vw;
+    height: 25vw;
 }
 
 .security{
@@ -61,4 +61,8 @@ a img{
 
 #security-label{
     font-size: 1.7vw;
+}
+
+.back a{
+    font-size: 0.5em;
 }
