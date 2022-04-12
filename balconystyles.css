@@ -79,6 +79,14 @@ footer{
     text-align: end;
 }
 
+button{
+    background-color: inherit;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 6vw;
+}
+
 .grid-item{
     padding: 1.5vw 0;
 }
