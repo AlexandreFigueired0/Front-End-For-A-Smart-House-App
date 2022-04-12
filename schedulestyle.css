@@ -27,12 +27,6 @@ main{
     justify-content: space-evenly;
 }
 
-.back a{
-    text-decoration: none;
-    height: fit-content;
-    padding: 10px;
-}
-
 input {
     font-size: 1em;
 }
