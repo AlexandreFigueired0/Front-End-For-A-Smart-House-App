@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha casa inteligente</title>
+    <link rel="stylesheet" href="style.css">      
+    <link rel="stylesheet" href="schedulestyle.css"> 
+</head>
+<body>
+    <div id = "container">  
+        <nav >
+            <h2 class= "nav-menu sub-title">Menu</h2>
+            <ul id = "list">
+                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                <a href=""> <li class="button">Quartos</li>             </a>
+                <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                <a href="wc.html"> <li class="button">WC</li>           </a>  
+            </ul>
+        </nav>
+
+        <main >
+            <h1>Horário da rega</h1> 
+                <div id = "schedule-container">
+                    <div id="day1" class="grid-item">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Segunda-Feira:
+                    </div>
+                    <input class="grid-item" type="time" id="day1-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div id="day2" class="grid-item">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Terça-Feira:
+                    </div>
+                    <input class="grid-item" type="time" id="day2-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div class="grid-item" id="day3">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Quarta-Feira:
+                    </div>
+                    <input class="grid-item" type="time" id="day3-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div class="grid-item" id="day4">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Quinta-Feira:
+                    </div>
+                    <input class="grid-item" type="time" id="day4-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div class="grid-item" id="day5">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Sexta-Feira:
+                    </div>
+                    <input class="grid-item" type="time" id="day5-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div class="grid-item" id="day6">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Sábado:
+                    </div>
+                    <input class="grid-item" type="time" id="day6-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <div class="grid-item" id="day7">
+                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
+                        Domingo:
+                    </div>
+                    <input class="grid-item" type="time" id="day7-in" name="appt"
+                    min="09:00" max="18:00" style="width: 150px;" size="20" required>
+                    <br>
+                </div>
+        </main>
+        <div id = "signs">
+            <h2 class = "sub-title">Donos</h2>
+            Alexandre Figueiredo <br>
+            Tomás Barreto <br>
+            Diogo Pereira <br>
+            Paulo Bolinhas <br>
+        </div>
+        <footer>
+            <div class="back">
+                <a class="button" href="main.html">Página Principal</a>
+                <a class="button" href="balcony.html">Varanda</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
