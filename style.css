@@ -62,8 +62,7 @@ h1{
 
 button{
     padding: 0; /* this centers the text inside the button */
-    font-size: 0.5em;
-    /*width: 5vw;*/
+    font-size: 0.55em;
     height: 2.5vw;
     background-color: inherit;
     align-items: center;
@@ -102,4 +101,8 @@ a{
     height: 2em;
     position: relative;
     bottom: 0.3vw;
+}
+
+.grid-item{
+    padding: 1.1vw 0;
 }
