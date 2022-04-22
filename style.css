@@ -63,8 +63,13 @@ h1{
 button{
     padding: 0; /* this centers the text inside the button */
     font-size: 0.5em;
-    width: 5vw;
+    /*width: 5vw;*/
     height: 2.5vw;
+    background-color: inherit;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 6vw;
 }
 
 a{ 
@@ -89,4 +94,12 @@ a{
     text-decoration: none;
     height: fit-content;
     padding: 10px;
+}
+
+
+.temp-controller{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 0.3vw;
 }
