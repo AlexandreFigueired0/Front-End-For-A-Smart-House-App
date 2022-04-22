@@ -16,10 +16,6 @@ main{
     grid-area: main;
 }
 
-#signs{
-    grid-area: signs;
-}
-
 footer{
     grid-area: back;
 }
