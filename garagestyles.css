@@ -1,34 +1,86 @@
 #container{
     display: grid;
-    grid-template-columns: 15% auto 15% ;
+    grid-template-columns: 15% auto;
     grid-template-rows: 80% 20%;
     grid-template-areas:
-         "menu main signs"
-         "menu back signs";
+         "menu main main"
+         "menu back back";
 }
  
 nav{
     grid-area: menu;
 }
 
-#signs{
-    grid-area: signs;
-
-}
 main{
     grid-area: main;
 }
 
 #garage-container{
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+        "temp-label temp"
+        "lights-label lights-btn"
+        "gate-label gate-btn"
+        "wash-car-label wash-car-btn"
+        "camera-label camera-link";
 }
 
-button{
-    font-size: .5em;
+#temperature-label{
+    grid-area: temp-label;
 }
 
-button:active{
-    border-style: inset;
+#temperature{
+    grid-area: temp;
+}
+
+#lights-label{
+    border-top: 1px solid white;
+    grid-area: lights-label;
+}
+
+#lights-btn{
+    border-top: 1px solid white;
+    grid-area: lights-btn;
+}
+
+#gate-label{
+    border-top: 1px solid white;
+    grid-area: gate-label;
+}
+
+#gate-btn{
+    border-top: 1px solid white;
+    grid-area: gate-btn;
+}
+
+#camera-label{
+    border-top: 1px solid white;
+    grid-area: camera-label;
+}
+
+#camera-link{
+    border-top: 1px solid white;
+    grid-area: camera-link ;
+}
+
+#wash-car-label{
+    border-top: 1px solid white;
+    grid-area: wash-car-label;
+}
+
+#wash-car-btn{
+    border-top: 1px solid white;
+    grid-area: wash-car-btn;
+}
+
+#temperature,#lights-btn,#gate-btn,#camera-link,#wash-car-btn{
+    width: 100%;
+    text-align: end;
+}
+
+.grid-item{
+    padding: 1.1vw 0;
 }
