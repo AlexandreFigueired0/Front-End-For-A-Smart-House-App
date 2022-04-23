@@ -3,20 +3,14 @@
     grid-template-columns: 15% auto 15% ;
     grid-template-rows: 65% auto;
     grid-template-areas:
-         "menu main signs"
-         "menu back signs";
+         "menu main main"
+         "menu back back";
 }
  
 nav{
     grid-area: menu;
 }
 
-#signs{
-    grid-area: signs;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 main{
     grid-area: main;
 }
@@ -43,22 +37,13 @@ main{
 
 
 .notification{
+    margin: 0 10px;
     font-size: .5em;
 }
 
-#cameras{
-    background-color: cadetblue;
-}
-
-button{
-    font-size: .5em;
-    margin-left: 10px;
-    height: inherit;
-    width: inherit;
-}
-
-button:active{
-    border-style: inset;
+.camera{
+    height: fit-content;
+    margin: 0 10px;
 }
 
 
