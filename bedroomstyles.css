@@ -27,8 +27,8 @@ main{
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "blinds-label blinds-btn"
-        "heat-bed-label heat-bed-btn";
+        "heat-bed-label heat-bed-btn"
+        "blinds-label blinds-btn";
 }
 
 #temperature-label{
