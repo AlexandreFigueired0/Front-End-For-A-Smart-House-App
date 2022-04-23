@@ -11,12 +11,6 @@ nav{
     border-right: 1px solid white;
 }
 
-#signs{
-    font-size: 1.5vw;
-    line-height: 1.5em;
-    text-align: center; 
-}
-
 h1{
     text-align: center;
 }
@@ -25,6 +19,10 @@ h1{
     text-align: center;
     font-size: 1.3em;
     width: 100%;
+}
+
+.back{
+    grid-area: back;
 }
 
 #list a{
@@ -62,8 +60,7 @@ h1{
 
 button{
     padding: 0; /* this centers the text inside the button */
-    font-size: 0.5em;
-    /*width: 5vw;*/
+    font-size: 0.55em;
     height: 2.5vw;
     background-color: inherit;
     align-items: center;
@@ -102,4 +99,8 @@ a{
     height: 2em;
     position: relative;
     bottom: 0.3vw;
+}
+
+.grid-item{
+    padding: 1.1vw 0;
 }

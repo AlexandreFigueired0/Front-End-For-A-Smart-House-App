@@ -16,7 +16,7 @@
                 <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
                 <a href="balcony.html"><li class="button">Varanda</li>  </a>
                 <a href="garage.html"> <li class="button">Garagem</li>  </a>
-                <a href=""> <li class="button">Quarto</li>             </a>
+                <a href="bedroom.html"> <li class="button">Quarto</li>             </a>
                 <a href="livingroom.html"> <li class="button">Sala</li> </a>
                 <a href="wc.html"> <li class="button">WC</li>           </a>      
             </ul>
@@ -25,21 +25,20 @@
         <main >
             <h1>WC</h1> <br>
                 <div id = "wc-container">
-                  <div>
-                    <div>
-                        Luzes: <button>Ligar</button>
-                    </div>
+                    <span id="temperature-label" class="grid-item">Temperatura </span> 
+                    <span class="grid-item" id="temperature"><button class="temp-controller">+</button>  20ºC  <button class="temp-controller">-</button> </span>
                     <br>
-                    <div>
-                        Aquecedor de Sanita: <button>Ligar</button> 
-                    </div>
-                 
-                    
-
-                </div>
+                    <span class="grid-item" id="lights-label">Luzes</span> 
+                    <span id="lights-btn" class="grid-item"><button > Ligar</button> </span>
+                    <br>
+                    <!-- oferecer ao user opcoes, temp agua, hidro-massagem, musica, espuma, aquecer toalha. -->
+                    <span id="bath-label" class="grid-item">Preparar banho</span> 
+                    <span id = "bath-btn" class="grid-item"><button>Preparar</button> </span>
                 </div>
         </main>
-        <div class="back"><a class="button" href="main.html">Página Principal</a></div>
+        <footer class="back">
+            <a class="button" href="main.html">Página Principal</a>
+        </footer>
     </div>
 </body>
 </html>

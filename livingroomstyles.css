@@ -13,60 +13,81 @@ nav{
 
 main{
     grid-area: main;
-   
 }
 
 #room-container{
+    margin: 0 4vw;
     display: grid;
-    height: 25vh;
-    grid-template-columns: repeat(3,10%) 11% ;
-    grid-template-rows: repeat(2,auto);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6,auto);
     grid-template-areas: 
-        "lights blinds tv projector"
-        "lights-btn blinds-btn tv-btn projector-btn";
-    justify-content: space-around;
-    font-size: 1em;
+        "temp-label temp"
+        "lights-label lights-btn"
+        "tv-label tv-btn"
+        "projector-label projector-btn"
+        "sofa-heat-label sofa-heat-btn"
+        "blinds-label blinds-btn";
 }
 
-#lights{
-    grid-area: lights;
+#temperature-label{
+    grid-area: temp-label;
 }
 
-#blinds{
-    grid-area: blinds;
+#temperature{
+    grid-area: temp;
 }
 
-#tv{
-    grid-area: tv;
-}
-
-#projector{
-    grid-area: projector;
+#lights-label{
+    border-top: 1px solid white;
+    grid-area: lights-label;
 }
 
 #lights-btn{
+    border-top: 1px solid white;
     grid-area: lights-btn;
 }
 
-#blinds-btn{
-    grid-area: blinds-btn;
+#tv-label{
+    border-top: 1px solid white;
+    grid-area: tv-label;
 }
 
 #tv-btn{
+    border-top: 1px solid white;
     grid-area: tv-btn;
 }
 
+#projector-label{
+    border-top: 1px solid white;
+    grid-area: projector-label;
+}
+
 #projector-btn{
-    grid-area: projector-btn;
+    border-top: 1px solid white;
+    grid-area: projector-btn ;
 }
 
-
-
-button{
-    font-size: .5em;
-    
+#sofa-heat-label{
+    border-top: 1px solid white;
+    grid-area: sofa-heat-label;
 }
 
-button:active{
-    border-style: inset;
+#sofa-heat-btn{
+    border-top: 1px solid white;
+    grid-area: sofa-heat-btn;
+}
+
+#blinds-label{
+    border-top: 1px solid white;
+    grid-area: blinds-label;
+}
+
+#blinds-btn{
+    border-top: 1px solid white;
+    grid-area: blinds-btn;
+}
+
+#temperature,#lights-btn,#tv-btn,#projector-btn,#sofa-heat-btn,#blinds-btn{
+    width: 100%;
+    text-align: end;
 }
