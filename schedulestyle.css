@@ -3,8 +3,8 @@
     grid-template-columns: 15% auto 15% ;
     grid-template-rows: 80% 20%;
     grid-template-areas:
-         "menu main signs"
-         "menu back signs";
+         "menu main main"
+         "menu back back";
 }
  
 nav{
@@ -42,22 +42,21 @@ input[type="time"]{
 
 #schedule-container{
     display: grid;
-    font-size: 0.8em;
-    grid-template-rows: repeat(7,14%);
-    grid-template-columns: auto auto;
+    grid-template-rows: repeat(7,auto);
+    grid-template-columns: auto auto auto;
     grid-template-areas: 
-        "day1 day1-in"
-        "day2 day2-in"
-        "day3 day3-in"
-        "day4 day4-in"
-        "day5 day5-in"
-        "day6 day6-in"
-        "day7 day7-in";
-    row-gap: 1.2vw;
-    justify-content: center;
+        "day1 day1-in config1"
+        "day2 day2-in config2"
+        "day3 day3-in config3"
+        "day4 day4-in config4"
+        "day5 day5-in config5"
+        "day6 day6-in config6"
+        "day7 day7-in config7";
+    justify-content: space-evenly;
 }
 
-#schedule-container > div, #balcony-container > input{
+#schedule-container > div{
+    background-color: red;
     height: 1vw;
     display: flex;
     align-items: center;
@@ -125,4 +124,40 @@ input[type= checkbox]{
 }
 #day7-in{
     grid-area: day7-in;
+}
+
+#config1{
+    grid-area: config1;
+}
+
+#config2{
+    grid-area: config2;
+}
+
+#config3{
+    grid-area: config3;
+}
+
+#config4{
+    grid-area: config4;
+}
+
+#config5{
+    grid-area: config5;
+}
+
+#config6{
+    grid-area: config6;
+}
+
+#config7{
+    grid-area: config7;
+}
+
+button{
+    height: max-content;
+}
+
+.config{
+    padding: 0;
 }
