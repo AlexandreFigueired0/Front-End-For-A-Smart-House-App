@@ -89,5 +89,5 @@ main{
 
 #temperature,#lights-btn,#tv-btn,#projector-btn,#sofa-heat-btn,#blinds-btn{
     width: 100%;
-    text-align: end;
+    justify-content: end;
 }

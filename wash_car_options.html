@@ -7,7 +7,6 @@
 <title>A minha casa inteligente</title>
 <link rel="stylesheet" href="styles/style.css">      
 <link rel="stylesheet" href="styles/wash_car_options_styles.css"> 
-<script src="script/garage_script.js" async></script>
 </head>
 <body>
     <div id = "container">  
@@ -25,41 +24,68 @@
 
         <main >
             <h1>Opções para lavagem</h1>
-            <div id = "garage-container">
+            <div id = "options-container">
                 <span id="pre-wash-label" class="grid-item">Pré-Lavagem</span> 
-                <span class="grid-item" id="pre-wash-cb">
+                <span class="grid-item" id="pre-wash-btn">
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                       </label>
                 </span>
                 <br>
-                <span class="grid-item" id="lights-label">Luzes</span> 
-                <span id="lights-btn" class="grid-item"><button > Ligar</button> </span>
+                <span class="grid-item" id="foam-label">Espuma</span> 
+                <span id="foam-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
                 <br>
-                <span id="gate-label" class="grid-item">Portão</span> 
-                <span id = "gate-btn" class="grid-item"><button>Abrir</button></span>
+                <span id="shampoo-label" class="grid-item">Shampoo</span> 
+                <span id = "shampoo-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
                 <br>
-                <!--colocar opcoes para a lavagem do carro-->
-                <span id="wash-car-label" class="grid-item">Lavar o carro</span>
-                <span id="wash-car-btn" class="grid-item" ><button>Lavar</button></span> 
+                <span id="chassis-label" class="grid-item">Chassis</span> 
+                <span id = "chassis-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
                 <br>
-                <span id="camera-label" class="grid-item">Câmera</span> 
-                <a href="#" id="camera-link" class="grid-item"><button>Ver</button></a>
-
-                <!-- Window alerting the user about the car washing, only appears when the use clicks "Lavar" -->
-                <div id="warning-window">
-                    Esta ação isolará o carro para a lavagem. <br>
-                    Deseja continuar?
-                    <div id="button-container">
-                        <button>Não</button>
-                        <button>Sim</button>
-                    </div>
-                </div>
+                <span id="cera-label" class="grid-item">Cera</span> 
+                <span id = "cera-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="polish-label" class="grid-item">Polir</span> 
+                <span id = "polish-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                 <span id="dry-label" class="grid-item">Secar</span> 
+                <span id = "dry-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
             </div>
         </main>
         <footer class="back">
-            <a class="button" href="main.html">Página Principal</a>
+            <a href="garage.html"><button>Cancelar</button></a>
+            <a href="garage.html"><button>Começar</button></a>
         </footer>
         
     </div>

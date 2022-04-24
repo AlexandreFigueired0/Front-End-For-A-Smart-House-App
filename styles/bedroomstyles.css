@@ -71,6 +71,6 @@ main{
 
 #temperature,#lights-btn,#blinds-btn,#heat-bed-btn{
     width: 100%;
-    text-align: end;
+    justify-content: end;
 }
 

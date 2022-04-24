@@ -78,7 +78,7 @@ main{
 
 #temperature,#lights-btn,#gate-btn,#camera-link,#wash-car-btn{
     width: 100%;
-    text-align: end;
+    justify-content: end;
 }
 
 #warning-window{

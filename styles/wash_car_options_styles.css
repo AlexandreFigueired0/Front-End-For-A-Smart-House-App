@@ -15,70 +15,92 @@ main{
     grid-area: main;
 }
 
-#garage-container{
+#options-container{
     margin: 0 4vw;
+    font-size: 0.8em;
     display: grid;
+    justify-content: space-evenly;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5,auto);
+    grid-template-rows: repeat(7,10%);
+    row-gap: 0em;
     grid-template-areas: 
-        "temp-label temp"
-        "lights-label lights-btn"
-        "gate-label gate-btn"
-        "wash-car-label wash-car-btn"
-        "camera-label camera-link";
+        "pre-wash-label pre-wash-btn"
+        "foam-label foam-btn"
+        "shampoo-label shampoo-btn"
+        "chassis-label chassis-btn"
+        "cera-label cera-btn"
+        "polish-label polish-btn"
+        "dry-label dry-btn";
 }
 
-#temperature-label{
-    grid-area: temp-label;
+#pre-wash-label{
+    grid-area: pre-wash-label;
 }
 
-#temperature{
-    grid-area: temp;
+#pre-wash-btn{
+    grid-area: pre-wash-btn;
 }
 
-#lights-label{
+#foam-label{
     border-top: 1px solid white;
-    grid-area: lights-label;
+    grid-area: foam-label;
 }
 
-#lights-btn{
+#foam-btn{
     border-top: 1px solid white;
-    grid-area: lights-btn;
+    grid-area: foam-btn;
 }
 
-#gate-label{
+#shampoo-label{
     border-top: 1px solid white;
-    grid-area: gate-label;
+    grid-area: shampoo-label;
 }
 
-#gate-btn{
+#shampoo-btn{
     border-top: 1px solid white;
-    grid-area: gate-btn;
+    grid-area: shampoo-btn;
 }
 
-#camera-label{
+#chassis-label{
     border-top: 1px solid white;
-    grid-area: camera-label;
+    grid-area: chassis-label;
 }
 
-#camera-link{
+#chassis-btn{
     border-top: 1px solid white;
-    grid-area: camera-link ;
+    grid-area: chassis-btn ;
 }
 
-#wash-car-label{
+#cera-label{
     border-top: 1px solid white;
-    grid-area: wash-car-label;
+    grid-area: cera-label;
 }
-
-#wash-car-btn{
+#cera-btn{
     border-top: 1px solid white;
-    grid-area: wash-car-btn;
+    grid-area: cera-btn;
 }
 
-#temperature,#lights-btn,#gate-btn,#camera-link,#wash-car-btn{
-    width: 100%;
-    text-align: end;
+#polish-label{
+    border-top: 1px solid white;
+    grid-area: polish-label;
+}
+#polish-btn{
+    border-top: 1px solid white;
+    grid-area: polish-btn;
+}
+
+#dry-label{
+    border-top: 1px solid white;
+    grid-area: dry-label;
+}
+#dry-btn{
+    border-top: 1px solid white;
+    grid-area: dry-btn;
+}
+
+
+#pre-wash-btn,#foam-btn,#shampoo-btn,#chassis-btn,#cera-btn,#polish-btn,#dry-btn{
+    justify-content: end;
 }
 
 #warning-window{
@@ -95,4 +117,14 @@ main{
     display: flex;
     justify-content: space-evenly;
     margin-top: 1em;
+}
+
+.back{
+    justify-content: space-evenly;
+}
+
+button{
+    font-size: 0.8em;
+    width: 8vw;
+    height: 3vw;
 }
