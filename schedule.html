@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A minha casa inteligente</title>
-    <link rel="stylesheet" href="style.css">      
-    <link rel="stylesheet" href="schedulestyle.css"> 
+    <link rel="stylesheet" href="styles/style.css">      
+    <link rel="stylesheet" href="styles/schedulestyle.css"> 
 </head>
 <body>
     <div id = "container">  
@@ -26,56 +26,77 @@
             <h1>Horário da rega</h1> 
                 <div id = "schedule-container">
                     <div id="day1" class="grid-item">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Segunda-Feira:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Segunda-Feira
                     </div>
                     <input class="grid-item" type="time" id="day1-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config1"><button>Configurar Rega</button></span>
 
                     <div id="day2" class="grid-item">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Terça-Feira:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Terça-Feira
                     </div>
                     <input class="grid-item" type="time" id="day2-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config2"><button>Configurar Rega</button></span>
 
                     <div class="grid-item" id="day3">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Quarta-Feira:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Quarta-Feira
                     </div>
                     <input class="grid-item" type="time" id="day3-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config3"><button>Configurar Rega</button></span>
 
                     <div class="grid-item" id="day4">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Quinta-Feira:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Quinta-Feira
                     </div>
                     <input class="grid-item" type="time" id="day4-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config4"><button>Configurar Rega</button></span>
 
                     <div class="grid-item" id="day5">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Sexta-Feira:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Sexta-Feira
                     </div>
                     <input class="grid-item" type="time" id="day5-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config5"><button>Configurar Rega</button></span>
 
                     <div class="grid-item" id="day6">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Sábado:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Sábado
                     </div>
                     <input class="grid-item" type="time" id="day6-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
                     <span class="grid-item config" id="config6"><button>Configurar Rega</button></span>
 
                     <div class="grid-item" id="day7">
-                        <input type="checkbox" id="checkbox-schedule" name="checkbox-schedule">
-                        Domingo:
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Domingo
                     </div>
                     <input class="grid-item" type="time" id="day7-in" name="appt"
                     min="09:00" max="18:00" style="width: 150px;" size="20" required>
@@ -89,6 +110,7 @@
                 <a class="button" href="balcony.html">Varanda</a>
             </div>
         </footer>
+
     </div>
 </body>
 </html>

@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A minha casa inteligente</title>
 <link rel="stylesheet" href="styles/style.css">      
-<link rel="stylesheet" href="styles/garagestyles.css"> 
-<script src="scripts/garage_script.js" async></script>
+<link rel="stylesheet" href="styles/wash_car_options_styles.css"> 
+<script src="script/garage_script.js" async></script>
 </head>
 <body>
     <div id = "container">  
@@ -24,10 +24,15 @@
         </nav>
 
         <main >
-            <h1>Garagem</h1>
+            <h1>Opções para lavagem</h1>
             <div id = "garage-container">
-                <span id="temperature-label" class="grid-item">Temperatura </span> 
-                <span class="grid-item" id="temperature"><button class="temp-controller">-</button><span id="temperature-value">20</span>ºC<button class="temp-controller">+</button> </span>
+                <span id="pre-wash-label" class="grid-item">Pré-Lavagem</span> 
+                <span class="grid-item" id="pre-wash-cb">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </span>
                 <br>
                 <span class="grid-item" id="lights-label">Luzes</span> 
                 <span id="lights-btn" class="grid-item"><button > Ligar</button> </span>
@@ -48,7 +53,7 @@
                     Deseja continuar?
                     <div id="button-container">
                         <button>Não</button>
-                        <a href="wash_car_options.html"><button>Sim</button></a>
+                        <button>Sim</button>
                     </div>
                 </div>
             </div>

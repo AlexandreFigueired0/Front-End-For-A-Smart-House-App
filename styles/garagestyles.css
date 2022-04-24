@@ -80,3 +80,19 @@ main{
     width: 100%;
     text-align: end;
 }
+
+#warning-window{
+    padding: 1vw;
+    position: absolute;
+    display: none;
+    background-color: #A79AD8;
+    border: 2px solid black;
+    align-self: center;
+    justify-self: center;
+}
+
+#button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
