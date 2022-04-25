@@ -137,3 +137,50 @@ button{
 .grid-item{
     padding: 1.1vw 0;
 }
+
+#loading-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    bottom: 22vw;
+}
+
+#loading-bar{
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+    font-size: 1.7vw;
+    color: black;
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+}
+
+#bar{
+    width: 90%;
+    background-color: grey;
+    height: 30px;
+}
+
+#progress-bar{
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 30px;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    margin: 0.8vw;
+}
+
+#OK, #cancelar{
+    padding: 10px;
+}
