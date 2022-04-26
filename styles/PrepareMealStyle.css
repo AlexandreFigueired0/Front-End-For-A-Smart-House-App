@@ -81,8 +81,8 @@ button:active{
 }
 
 #preparar1-btn, #preparar2-btn, #preparar3-btn, #preparar4-btn, #preparar5-btn, #preparar6-btn, #preparar7-btn{
-    width: 100%;
-    text-align: end;
+    margin-right: 10px;
+    justify-content: end;
 }
 
 #preparar1-btn{
@@ -119,23 +119,12 @@ button:active{
     border-top: 1px solid white;
 }
 
-#info{
-    font-size: 1vw;
-    float: right;
-    padding-right: 4vw;
-    margin-bottom: 0.5vw;
-}
-
 button{
     background-color: inherit;
     align-items: center;
     border: 3px solid black;
     border-radius: 10px;
     width: 6vw;
-}
-
-.grid-item{
-    padding: 1.1vw 0;
 }
 
 #loading-wrap {
@@ -182,7 +171,11 @@ button{
     margin: 0.8vw;
 }
 
-#OK, #cancelar{
+.back{
+    justify-content: space-evenly;
+}
+
+#OK, #cancel{
     padding: 0.5vw;
 }
 

@@ -3,8 +3,8 @@
     grid-template-columns: 15% auto;
     grid-template-rows: 80% 20%;
     grid-template-areas:
-         "menu main main"
-         "menu back back";
+         "menu main "
+         "menu back ";
 }
  
 nav{
