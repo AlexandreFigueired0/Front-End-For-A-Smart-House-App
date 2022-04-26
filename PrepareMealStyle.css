@@ -34,7 +34,7 @@ main{
         "prato7-label preparar7-btn";
     overflow-x: hidden;
     overflow-y: auto;
-    width: 1100px;
+    width: 76vw;
     height: 350px;
 }
 
@@ -151,12 +151,13 @@ button{
     font-size: 1.7vw;
     color: black;
     border: 1px solid black;
-    width: 500px;
-    height: 200px;
+    width: 29vw;
+    height: 13vw;
     display: flex;
     flex-direction:column;
     align-items: center;
     position: relative;
+    top: 5vw
 }
 
 #bar{
@@ -184,3 +185,25 @@ button{
 #OK, #cancelar{
     padding: 10px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
