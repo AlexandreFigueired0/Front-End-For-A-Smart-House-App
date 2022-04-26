@@ -15,6 +15,7 @@ function move() {
         function frame() {
             if(width >= 100) {
                 elem.innerHTML = "Refeição pronta a servir!"
+                playBell();
                 clearInterval(id);
                 i = 0;
             }
@@ -33,4 +34,9 @@ function okOrCancelMeal() {
         elem.setAttribute('style', 'display:none');
         width = 0;
     }
+}
+
+function playBell() {
+    var audio = new Audio("PrepareMeal_AudioEffect.mp4");
+    audio.play();
 }
