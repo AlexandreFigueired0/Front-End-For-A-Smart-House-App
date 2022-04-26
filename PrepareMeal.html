@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha casa inteligente</title>
+    <link rel="stylesheet" href="style.css">      
+    <link rel="stylesheet" href="PrepareMealStyle.css">
+    <script src="PrepareMealScript.js"></script>
+</head>
+<body>
+    <div id = "container">  
+        <nav >
+            <h2 class= "nav-menu sub-title">Menu</h2>
+            <ul id = "list">
+                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                <a href=""> <li class="button">Quartos</li>             </a>
+                <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                <a href="wc.html"> <li class="button">WC</li>           </a>      
+            </ul>
+        </nav>
+
+        <main >
+            <h1>Escolher Prato</h1> <br>
+            <span id="info">scroll para mais opções</span>
+                <div id = "preparar-refeicao-container">
+                    <span class="grid-item" id="prato1-label">Bacalhau com natas</span>
+                    <span id="preparar1-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato2-label">Lasanha</span>
+                    <span id="preparar2-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato3-label">Feijoada</span>
+                    <span id="preparar3-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato4-label">Cozido à portuguesa</span>
+                    <span id="preparar4-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato5-label">Choquinhos à Algarvia</span>
+                    <span id="preparar5-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato6-label">Omelete</span>
+                    <span id="preparar6-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                    <br>
+                    <span class="grid-item" id="prato7-label">Carbonara</span>
+                    <span id="preparar7-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
+                </div>
+                <div id="loading-wrap" style="display: none;">
+                    <div id="loading-bar">
+                        <p>Em confeção...</p>
+                        <div id="bar">
+                            <div id="progress-bar">1%</div>
+                        </div>
+                        <div id="botoes">
+                            <div id="cancelar" class="button" onclick="okOrCancelMeal()">Cancelar</div>
+                            <div id="OK" class="button" onclick="okOrCancelMeal()">OK</div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <div class="back"><a class="button" href="main.html">Voltar</a></div>
+    </div>
+</body>
+</html>

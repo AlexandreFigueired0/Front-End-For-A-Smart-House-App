@@ -3,8 +3,8 @@
     grid-template-columns: 15% auto;
     grid-template-rows: 80% 20%;
     grid-template-areas:
-         "menu main main"
-         "menu back back";
+         "menu main"
+         "menu back";
 }
  
 nav{
@@ -20,9 +20,14 @@ main{
 }
 
 #kitchen-container{
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "temp-label temp"
+        "lights-label lights-btn"
+        "cozinhar-label cozinhar-btn";
 }
 
 button{
@@ -32,3 +37,49 @@ button{
 button:active{
     border-style: inset;
 }
+
+#temperature,#lights-btn, #cozinhar-btn{
+    width: 100%;
+    text-align: end;
+}
+
+#temperature-label{
+    grid-area: temp-label;
+}
+
+#temperature{
+    grid-area: temp;
+}
+
+#lights-label{
+    border-top: 1px solid white;
+    grid-area: lights-label;
+}
+
+#lights-btn{
+    border-top: 1px solid white;
+    grid-area: lights-btn;
+}
+
+#cozinhar-label {
+    border-top: 1px solid white;
+    grid-area: cozinhar-label;
+}
+
+#cozinhar-btn {
+    border-top: 1px solid white;
+    grid-area: cozinhar-btn;
+}
+
+button{
+    background-color: inherit;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 6vw;
+}
+
+.grid-item{
+    padding: 1.5vw 0;
+}
+

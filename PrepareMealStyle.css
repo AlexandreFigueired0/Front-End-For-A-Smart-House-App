@@ -1,0 +1,209 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+         "menu main"
+         "menu back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+main{
+    grid-area: main;
+}
+
+.sub-title{
+    width: 100%;
+}
+
+#preparar-refeicao-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "prato1-label preparar1-btn"
+        "prato2-label preparar2-btn"
+        "prato3-label preparar3-btn"
+        "prato4-label preparar4-btn"
+        "prato5-label preparar5-btn"
+        "prato6-label preparar6-btn"
+        "prato7-label preparar7-btn";
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 76vw;
+    height: 20vw;
+}
+
+button{
+    font-size: .5em;
+}
+
+button:active{
+    border-style: inset;
+}
+
+#prato1-label {
+    grid-area: prato1-label;
+}
+
+#prato2-label {
+    grid-area: prato2-label;
+    border-top: 1px solid white;
+}
+
+#prato3-label {
+    grid-area: prato3-label;
+    border-top: 1px solid white;
+}
+
+#prato4-label {
+    grid-area: prato4-label;
+    border-top: 1px solid white;
+}
+
+#prato5-label {
+    grid-area: prato5-label;
+    border-top: 1px solid white;
+}
+
+#prato6-label {
+    grid-area: prato6-label;
+    border-top: 1px solid white;
+}
+
+#prato7-label {
+    grid-area: prato7-label;
+    border-top: 1px solid white;
+}
+
+#preparar1-btn, #preparar2-btn, #preparar3-btn, #preparar4-btn, #preparar5-btn, #preparar6-btn, #preparar7-btn{
+    width: 100%;
+    text-align: end;
+}
+
+#preparar1-btn{
+    grid-area: preparar1-btn;
+}
+
+#preparar2-btn{
+    grid-area: preparar2-btn;
+    border-top: 1px solid white;
+}
+
+#preparar3-btn{
+    grid-area: preparar3-btn;
+    border-top: 1px solid white;
+}
+
+#preparar4-btn{
+    grid-area: preparar4-btn;
+    border-top: 1px solid white;
+}
+
+#preparar5-btn{
+    grid-area: preparar5-btn;
+    border-top: 1px solid white;
+}
+
+#preparar6-btn{
+    grid-area: preparar6-btn;
+    border-top: 1px solid white;
+}
+
+#preparar7-btn{
+    grid-area: preparar7-btn;
+    border-top: 1px solid white;
+}
+
+#info{
+    font-size: 1vw;
+    float: right;
+    padding-right: 4vw;
+    margin-bottom: 0.5vw;
+}
+
+button{
+    background-color: inherit;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 6vw;
+}
+
+.grid-item{
+    padding: 1.1vw 0;
+}
+
+#loading-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    bottom: 22vw;
+}
+
+#loading-bar{
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+    font-size: 1.7vw;
+    color: black;
+    border: 1px solid black;
+    width: 29vw;
+    height: 13vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    top: 5vw
+}
+
+#bar{
+    width: 90%;
+    background-color: grey;
+    height: 30px;
+}
+
+#progress-bar{
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 30px;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    margin: 0.8vw;
+}
+
+#OK, #cancelar{
+    padding: 0.5vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.5vw;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.5vw;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
