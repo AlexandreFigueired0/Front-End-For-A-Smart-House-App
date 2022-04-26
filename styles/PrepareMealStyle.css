@@ -19,7 +19,7 @@ main{
     width: 100%;
 }
 
-#preparar-refeicao-container{
+#meals-container{
     margin: 0 4vw;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -35,16 +35,9 @@ main{
     overflow-x: hidden;
     overflow-y: auto;
     width: 76vw;
-    height: 20vw;
+    height: 50vh;
 }
 
-button{
-    font-size: .5em;
-}
-
-button:active{
-    border-style: inset;
-}
 
 #prato1-label {
     grid-area: prato1-label;
@@ -119,84 +112,6 @@ button:active{
     border-top: 1px solid white;
 }
 
-button{
-    background-color: inherit;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 6vw;
-}
-
-#loading-wrap {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-    bottom: 22vw;
-}
-
-#loading-bar{
-    background: linear-gradient(to right, #8CA6DB, #B993D6);
-    font-size: 1.7vw;
-    color: black;
-    border: 1px solid black;
-    width: 29vw;
-    height: 13vw;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    position: relative;
-    top: 5vw
-}
-
-#bar{
-    width: 90%;
-    background-color: grey;
-    height: 30px;
-}
-
-#progress-bar{
-    width: 1%;
-    height: 30px;
-    background-color: green;
-    font-size: 1.2vw;
-    text-align: center;
-    line-height: 30px;
-}
-
-#botoes{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5vw;
-    margin: 0.8vw;
-}
-
 .back{
     justify-content: space-evenly;
 }
-
-#OK, #cancel{
-    padding: 0.5vw;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 0.5vw;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 0.5vw;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 0.5vw;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }

@@ -17,7 +17,7 @@
                 <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
                 <a href="balcony.html"><li class="button">Varanda</li>  </a>
                 <a href="garage.html"> <li class="button">Garagem</li>  </a>
-                <a href="bedroom.html"> <li class="button">Quartos</li> </a>
+                <a href="bedroom.html"> <li class="button">Quarto</li> </a>
                 <a href="livingroom.html"> <li class="button">Sala</li> </a>
                 <a href="wc.html"> <li class="button">WC</li>           </a>      
             </ul>
@@ -25,7 +25,7 @@
 
         <main >
             <h1>Escolher Prato</h1> <br>
-                <div id = "preparar-refeicao-container">
+                <div id = "meals-container">
                     <span class="grid-item" id="prato1-label">Bacalhau com natas</span>
                     <span id="preparar1-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
                     <br>
@@ -46,16 +46,15 @@
                     <br>
                     <span class="grid-item" id="prato7-label">Carbonara</span>
                     <span id="preparar7-btn" class="grid-item"><button id="preparar-btn" onclick="showLoading()">Preparar</button></span>
-                </div>
-                <div id="loading-wrap" style="display: none;">
-                    <div id="loading-bar">
+
+                    <div id="loading-bar" style="display: none;">
                         <p>Em confeção...</p>
                         <div id="bar">
                             <div id="progress-bar">1%</div>
                         </div>
-                        <div id="botoes">
-                            <div id="cancel" class="button" onclick="okOrCancelMeal()">Cancelar</div>
-                            <div id="OK" class="button" onclick="okOrCancelMeal()">OK</div>
+                        <div id="buttons-container">
+                            <button id="cancel" onclick="okOrCancelMeal()">Cancelar</button>
+                            <button id="OK" onclick="okOrCancelMeal()">OK</button>
                         </div>
                     </div>
                 </div>

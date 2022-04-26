@@ -30,10 +30,6 @@ main{
         "cozinhar-label cozinhar-btn";
 }
 
-button{
-    font-size: .5em;
-}
-
 button:active{
     border-style: inset;
 }
@@ -68,12 +64,4 @@ button:active{
 #cozinhar-btn {
     border-top: 1px solid white;
     grid-area: cozinhar-btn;
-}
-
-button{
-    background-color: inherit;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 6vw;
 }

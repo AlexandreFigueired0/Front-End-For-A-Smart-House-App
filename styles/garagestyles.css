@@ -86,7 +86,7 @@ main{
     position: absolute;
     display: none;
     background-color: #A79AD8;
-    border: 2px solid black;
+    border: 0.07em solid black;
     align-self: center;
     justify-self: center;
 }

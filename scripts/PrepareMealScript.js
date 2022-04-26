@@ -1,7 +1,7 @@
 var i = 0
 
 function showLoading() {
-    var elem = document.getElementById("loading-wrap");
+    var elem = document.getElementById("loading-bar");
     elem.setAttribute('style', 'display:flex');
     move();
 }
@@ -30,7 +30,7 @@ function move() {
 
 function okOrCancelMeal() {
     if(width == 100) {
-        var elem = document.getElementById("loading-wrap");
+        var elem = document.getElementById("loading-bar");
         elem.setAttribute('style', 'display:none');
         width = 0;
     }
