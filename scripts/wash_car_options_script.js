@@ -14,8 +14,8 @@ function move() {
         var id = setInterval(frame, 30);
         function frame() {
             if(width >= 100) {
-                elem.innerHTML = "Refeição pronta a servir!"
-                playRefeicao();
+                elem.innerHTML = "Lavagem Concluida!"
+                playLavagem();
                 clearInterval(id);
                 i = 0;
             }
@@ -36,7 +36,7 @@ function okOrCancelMeal() {
     }
 }
 
-function playRefeicao() {
-    var audio = new Audio("PrepareMeal_AudioEffect.mp4");
+function playLavagem() {
+    var audio = new Audio("LavagemConcluida.mp4");
     audio.play();
 }
