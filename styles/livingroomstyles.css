@@ -6,30 +6,27 @@
          "menu main main"
          "menu back back";
 }
-
+ 
 nav{
     grid-area: menu;
 }
 
 main{
-    font-size: 1em;
     grid-area: main;
 }
 
-footer{
-    grid-area: back;
-}
-
-#balcony-container{
+#room-container{
     margin: 0 4vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(6,auto);
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "schedule-label schedule-link"
-        "camera-label camera-link";
+        "tv-label tv-btn"
+        "projector-label projector-btn"
+        "sofa-heat-label sofa-heat-btn"
+        "blinds-label blinds-btn";
 }
 
 #temperature-label{
@@ -50,35 +47,47 @@ footer{
     grid-area: lights-btn;
 }
 
-#schedule-label{
+#tv-label{
     border-top: 1px solid white;
-    grid-area: schedule-label;
+    grid-area: tv-label;
 }
 
-#schedule-link{
+#tv-btn{
     border-top: 1px solid white;
-    grid-area: schedule-link;
+    grid-area: tv-btn;
 }
 
-#camera-label{
+#projector-label{
     border-top: 1px solid white;
-    grid-area: camera-label;
+    grid-area: projector-label;
 }
 
-#camera-link{
+#projector-btn{
     border-top: 1px solid white;
-    grid-area: camera-link ;
+    grid-area: projector-btn ;
 }
 
-#temperature,#lights-btn,#schedule-link,#camera-link{
+#sofa-heat-label{
+    border-top: 1px solid white;
+    grid-area: sofa-heat-label;
+}
+
+#sofa-heat-btn{
+    border-top: 1px solid white;
+    grid-area: sofa-heat-btn;
+}
+
+#blinds-label{
+    border-top: 1px solid white;
+    grid-area: blinds-label;
+}
+
+#blinds-btn{
+    border-top: 1px solid white;
+    grid-area: blinds-btn;
+}
+
+#temperature,#lights-btn,#tv-btn,#projector-btn,#sofa-heat-btn,#blinds-btn{
     width: 100%;
-    text-align: end;
-}
-
-button{
-    background-color: inherit;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 6vw;
+    justify-content: end;
 }

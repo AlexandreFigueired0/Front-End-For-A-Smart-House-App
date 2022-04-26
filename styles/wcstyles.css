@@ -1,4 +1,3 @@
-
 #container{
     display: grid;
     grid-template-columns: 15% auto;
@@ -19,16 +18,15 @@ main{
     width: 100%;
 }
 
-#bedroom-container{
+#wc-container{
     margin: 0 4vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "heat-bed-label heat-bed-btn"
-        "blinds-label blinds-btn";
+        "bath-label bath-btn";
 }
 
 #temperature-label{
@@ -49,28 +47,16 @@ main{
     grid-area: lights-btn;
 }
 
-#blinds-label{
+#bath-label{
     border-top: 1px solid white;
-    grid-area: blinds-label;
+    grid-area: bath-label;
 }
 
-#blinds-btn{
+#bath-btn{
     border-top: 1px solid white;
-    grid-area: blinds-btn;
+    grid-area: bath-btn;
 }
 
-#heat-bed-label{
-    border-top: 1px solid white;
-    grid-area: heat-bed-label;
+#temperature,#lights-btn,#bath-btn{
+    justify-content: end;
 }
-
-#heat-bed-btn{
-    border-top: 1px solid white;
-    grid-area: heat-bed-btn;
-}
-
-#temperature,#lights-btn,#blinds-btn,#heat-bed-btn{
-    width: 100%;
-    text-align: end;
-}
-

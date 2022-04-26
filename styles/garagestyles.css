@@ -15,18 +15,17 @@ main{
     grid-area: main;
 }
 
-#room-container{
+#garage-container{
     margin: 0 4vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(5,auto);
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "tv-label tv-btn"
-        "projector-label projector-btn"
-        "sofa-heat-label sofa-heat-btn"
-        "blinds-label blinds-btn";
+        "gate-label gate-btn"
+        "wash-car-label wash-car-btn"
+        "camera-label camera-link";
 }
 
 #temperature-label{
@@ -47,47 +46,53 @@ main{
     grid-area: lights-btn;
 }
 
-#tv-label{
+#gate-label{
     border-top: 1px solid white;
-    grid-area: tv-label;
+    grid-area: gate-label;
 }
 
-#tv-btn{
+#gate-btn{
     border-top: 1px solid white;
-    grid-area: tv-btn;
+    grid-area: gate-btn;
 }
 
-#projector-label{
+#camera-label{
     border-top: 1px solid white;
-    grid-area: projector-label;
+    grid-area: camera-label;
 }
 
-#projector-btn{
+#camera-link{
     border-top: 1px solid white;
-    grid-area: projector-btn ;
+    grid-area: camera-link ;
 }
 
-#sofa-heat-label{
+#wash-car-label{
     border-top: 1px solid white;
-    grid-area: sofa-heat-label;
+    grid-area: wash-car-label;
 }
 
-#sofa-heat-btn{
+#wash-car-btn{
     border-top: 1px solid white;
-    grid-area: sofa-heat-btn;
+    grid-area: wash-car-btn;
 }
 
-#blinds-label{
-    border-top: 1px solid white;
-    grid-area: blinds-label;
-}
-
-#blinds-btn{
-    border-top: 1px solid white;
-    grid-area: blinds-btn;
-}
-
-#temperature,#lights-btn,#tv-btn,#projector-btn,#sofa-heat-btn,#blinds-btn{
+#temperature,#lights-btn,#gate-btn,#camera-link,#wash-car-btn{
     width: 100%;
-    text-align: end;
+    justify-content: end;
+}
+
+#warning-window{
+    padding: 1vw;
+    position: absolute;
+    display: none;
+    background-color: #A79AD8;
+    border: 2px solid black;
+    align-self: center;
+    justify-self: center;
+}
+
+#button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
 }
