@@ -58,6 +58,5 @@ main{
 }
 
 #temperature,#lights-btn,#bath-btn{
-    width: 100%;
     justify-content: end;
 }
