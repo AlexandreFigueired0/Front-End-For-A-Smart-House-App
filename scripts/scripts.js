@@ -19,8 +19,7 @@ function move() {
         var id = setInterval(frame, 30);
         function frame() {
             if(width >= 100) {
-                elem.innerHTML = "Refeição pronta a servir!"
-                playRefeicao();
+                elem.innerHTML = "Processo Concluído!"
                 clearInterval(id);
                 i = 0;
             }
