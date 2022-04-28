@@ -39,8 +39,9 @@ input[type="time"]{
         "day5 day5-in config5"
         "day6 day6-in config6"
         "day7 day7-in config7";
+    justify-content: center;
     row-gap: 1vh;
-    justify-content: space-evenly;
+    column-gap: 10vw;
 }
 
 #schedule-container > div{
