@@ -55,3 +55,12 @@ function changeTemperature(b){
 
     temperatureValue.textContent = currentTemperature
 }
+
+function closeOrOpen() {
+    var elem = document.getElementById("openOrClose");
+    if(elem.innerHTML == "Abrir")
+        elem.innerHTML = "Fechar";
+    else if(elem.innerHTML == "Fechar")
+        elem.innerHTML = "Abrir";
+}
+
