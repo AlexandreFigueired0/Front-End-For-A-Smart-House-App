@@ -26,7 +26,8 @@ main{
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "bath-label bath-btn";
+        "bath-label bath-btn"
+        "blinds-label blinds-btn";
 }
 
 #temperature-label{
@@ -57,6 +58,16 @@ main{
     grid-area: bath-btn;
 }
 
-#temperature,#lights-btn,#bath-btn{
+#temperature, #lights-btn, #bath-btn, #blinds-btn{
     justify-content: end;
+}
+
+#blinds-label {
+    border-top: 1px solid white;
+    grid-area: blinds-label;
+}
+
+#blinds-btn {
+    border-top: 1px solid white;
+    grid-area: blinds-btn;
 }
