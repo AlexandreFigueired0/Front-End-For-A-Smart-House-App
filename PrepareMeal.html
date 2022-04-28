@@ -56,8 +56,8 @@
                             <div id="progress-bar">1%</div>
                         </div>
                         <div id="buttons-container">
-                            <button id="cancel" onclick="okOrCancelMeal()">Cancelar</button>
-                            <button id="OK" onclick="okOrCancelMeal()">OK</button>
+                            <button id="cancel" onclick="location='kitchen.html';">Cancelar</button>
+                            <button id="OK" class="disabled">OK</button>
                         </div>
                     </div>
                 </div>
@@ -66,6 +66,9 @@
             <a href="main.html" class="button">Página Principal</a>
             <a class="button" href="kitchen.html">Cozinha</a>
         </footer>
+
+        <!-- just to know whats the prev page -->
+        <div id="prev" style="display: none;">kitchen.html</div>
     </div>
 </body>
 </html>

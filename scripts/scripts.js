@@ -15,6 +15,7 @@ function showLoading() {
 function move() {
     let ok = document.getElementById("OK")
     let cancel = document.getElementById("cancel")
+    let prev = document.getElementById("prev").textContent
     if(i == 0) {
         i = 1;
         var elem = document.getElementById("progress-bar");
@@ -25,7 +26,7 @@ function move() {
                 clearInterval(id);
                 i = 0;
                 ok.classList = ""
-                ok.addEventListener("click",() => location='wc.html')
+                ok.addEventListener("click",() => location=prev)
                 cancel.classList.add("disabled")
             }
             else {
@@ -34,14 +35,6 @@ function move() {
                 elem.innerHTML = width + "%";
             }
         }
-    }
-}
-
-function okOrCancelMeal() {
-    if(width == 100) {
-        var elem = document.getElementById("loading-bar");
-        elem.setAttribute('style', 'display:none');
-        width = 0;
     }
 }
 
