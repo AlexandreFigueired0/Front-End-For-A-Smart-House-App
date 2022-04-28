@@ -58,6 +58,7 @@ function changeTemperature(b){
 
 function closeOrOpen() {
     var elem = document.getElementById("openOrClose");
+    
     if(elem.innerHTML == "Abrir")
         elem.innerHTML = "Fechar";
     else if(elem.innerHTML == "Fechar")

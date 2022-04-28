@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">      
     <link rel="stylesheet" href="styles/livingroomstyles.css">
     <script src="scripts/scripts.js" async></script>
+    <script src="scripts/livingroom_script.js" async></script>
 </head>
 <body>
     <div id = "container">  
@@ -38,16 +39,16 @@
                 </span>
                 <br>
                 <span id="tv-label" class="grid-item">Televisão</span> 
-                <span id = "tv-btn" class="grid-item"><button>Ligar</button></span>
+                <span id = "tv-btn" class="grid-item"><button id="TVOnOff" onclick="turnTVOnOrOff()">Ligar</button></span>
                 <br>
                 <span id="projector-label" class="grid-item">Projetor</span>
-                <span id="projector-btn" class="grid-item" ><button>Ligar</button></span> 
+                <span id="projector-btn" class="grid-item" ><button id="ProjetorOnOff" onclick="turnProjectorOnOrOff()">Ligar</button></span> 
                 <br>
                 <span id="sofa-heat-label" class="grid-item">Aquecer Sofá</span> 
                 <span id="sofa-heat-btn" class="grid-item"><button>Aquecer</button></span>
                 <br>
                 <span class="grid-item" id="blinds-label">Estores</span> 
-                <span id="blinds-btn" class="grid-item"><button id="openOrClose" onclick="closeOrOpenDoor()">Abrir</button> </span>
+                <span id="blinds-btn" class="grid-item"><button id="openOrClose" onclick="closeOrOpen()">Abrir</button> </span>
             </div>
         </main>
         <div class="back"><a class="button"href="main.html">Página Principal</a></div>
