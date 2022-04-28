@@ -39,6 +39,7 @@ input[type="time"]{
         "day5 day5-in config5"
         "day6 day6-in config6"
         "day7 day7-in config7";
+    row-gap: 1vh;
     justify-content: space-evenly;
 }
 
@@ -141,5 +142,6 @@ button{
 
 .config{
     padding: 0;
-    display: none;
+    width: 6em;
+    visibility: hidden;
 }
