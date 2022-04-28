@@ -61,11 +61,22 @@
                             <span class="slider round"></span>
                         </label>
                     </span>
+
+
+                    <div id="loading-bar" style="display: none;">
+                        <p>A preparar banho...</p>
+                        <div id="bar">
+                            <div id="progress-bar">1%</div>
+                        </div>
+                        <div id="buttons-container">
+                            <button id="cancel" onclick="location='wc.html';">Cancelar</button>
+                            <button id="OK" class="disabled">OK</button>
+                    </div>
                 </div>
         </main>
         <footer class="back">
             <a href="wc.html" > <button>Cancelar</button> </a>
-            <a href="wc.html"> <button>Começar</button> </a>
+            <a> <button onclick="showLoading()">Começar</button> </a>
         </footer>
     </div>
 </body>
