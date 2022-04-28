@@ -84,5 +84,6 @@ main{
 }
 
 .back{
+    font-size: 1.3em;
     justify-content: space-evenly;
 }

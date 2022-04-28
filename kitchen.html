@@ -26,10 +26,15 @@
             <h1>Cozinha</h1> <br>
                 <div id = "kitchen-container">
                     <span class="grid-item" id="lights-label">Luzes</span>
-                    <span id="lights-btn" class="grid-item"><button>Ligar</button></span>
+                    <span id="lights-btn" class="grid-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </span>
                     <br>
                     <span class="grid-item" id="temperature-label">Temperatura</span>
-                    <span id="temperature" class="grid-item">29ºC</span>
+                    <span id="temperature" class="grid-item"><button class="temp-controller">-</button><span id="temperature-value">20</span>ºC<button class="temp-controller">+</button> </span>
                     <br>
                     <span class="grid-item" id="cozinhar-label">Preparar refeição</span>
                     <span id="cozinhar-btn" class="grid-item">

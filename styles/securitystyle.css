@@ -46,4 +46,13 @@ main{
     margin: 0 10px;
 }
 
+#lock{
+    font-size: 1em;
+    width: 10vw;
+    height: fit-content;
+    align-self: flex-end;
+    margin-top: 10vh;
+    margin-left: 35vw;
+}
+
 

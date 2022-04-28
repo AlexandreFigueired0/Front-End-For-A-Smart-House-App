@@ -112,6 +112,12 @@ main{
     border-top: 1px solid white;
 }
 
+#new-dish{
+    position: absolute;
+    bottom: 16vh;
+    height: fit-content;
+}
+
 .back{
     justify-content: space-evenly;
 }
