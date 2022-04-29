@@ -8,30 +8,64 @@
     <link rel="stylesheet" href="styles/style.css">    
     <link rel="stylesheet" href="styles/mainstyle.css"> 
     <script src="scripts/scripts.js" async></script>
-</head>
-<body>
-    <div id = "container">  
-        <nav >
-            <h2 class= "nav-menu sub-title">Menu</h2>
-            <ul id = "list">
-                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
-                <a href="balcony.html"><li class="button">Varanda</li>  </a>
-                <a href="garage.html"> <li class="button">Garagem</li>  </a>
-                <a href="bedroom.html"> <li class="button">Quarto</li>             </a>
-                <a href="livingroom.html"> <li class="button">Sala</li> </a>
-                <a href="wc.html"> <li class="button">WC</li>           </a>  
-            </ul>
-        </nav> 
+    <script> 
 
-        <main >
-            <img src="imgs/home.png" alt="Casa">
-        </main>
-        <div class = "security button">
-            <a href="security.html" > 
-                <img  src="imgs/lock1.png" alt="Segurança"> <br>
-                <div id = "security-label">Segurança</div>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+        function startTime() {
+             const today = new Date();
+             let h = today.getHours();
+             let m = today.getMinutes();
+             m = checkTime(m);
+             document.getElementById('clock').innerHTML =  h + ":" + m;
+             setTimeout(startTime, 1000);
+         }
+ 
+        function checkTime(i) {
+             if (i < 10) {i = "0" + i};  
+             return i;
+         }
+ 
+     </script>
+ 
+ </head>
+ <body onload=startTime();>
+     <div id = "container">  
+ 
+         <div id="notbar">
+             &#128267; <span id='clock'></span>
+         </div>
+ 
+         <div id="c">
+             &#128274; &#128263; &#128233; &#128246; 
+         </div>
+ 
+         <nav >
+             <h2 class= "nav-menu sub-title">Divisões</h2>
+             <ul id = "list">
+                 <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                 <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                 <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                 <a href=""> <li class="button">Quarto</li>             </a>
+                 <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                 <a href="wc.html"> <li class="button">WC</li>           </a>  
+             </ul>
+         </nav> 
+ 
+         <main >
+             <img src="imgs/home.png" alt="Casa">
+         </main>
+         <div class = "temperature button">
+             <a href="imgs/temperature.html" > 
+                 <img  src="imgs/temperature.png" alt="Temperatura"> <br>
+                 <div id = "temperature-label">Temperatura</div>
+             </a>
+         </div>
+         <div class = "security button">
+             <a href="imgs/security.html" > 
+                 <img  src="imgs/lock1.png" alt="Segurança"> <br>
+                 <div id = "security-label">Segurança</div>
+             </a>
+         </div>
+     </div>
+ </body>
+ 
+ </html>

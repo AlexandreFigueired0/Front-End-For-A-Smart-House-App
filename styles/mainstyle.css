@@ -1,13 +1,30 @@
-
 #container{
     display: grid;
     margin: auto;
     grid-template-columns: 15% auto 15% ;
-    grid-template-rows: 65% auto;
+    grid-template-rows: 6% auto auto;
     grid-template-areas:
-         "menu main security"
+         "notbar notbar c"
+         "menu main temperature"
          "menu main security";
 }
+
+#notbar{
+    grid-area: notbar;
+    border-bottom: 1px solid white;
+}
+
+#c{
+    grid-area: c;
+    float:right;
+    border-bottom: 1px solid white;
+}
+
+#clock{
+    justify-self: end;
+    align-self: flex-end;
+}
+
 
 nav{
     grid-area: menu;
