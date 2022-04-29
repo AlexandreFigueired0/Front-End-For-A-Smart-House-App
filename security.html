@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">      
     <link rel="stylesheet" href="styles/securitystyle.css"> 
     <script src="scripts/scripts.js" async></script>
+    <script src="scripts/security_script.js" async></script>
 </head>
 <body>
     <div id = "container">  
@@ -28,7 +29,7 @@
             <div id="security-container">
                 <div id = "notifications-container">
                     <div class="notification-label">
-                        Entrada: <span class="notification entry-notification">Sem registo de atividade fora do normal</span> 
+                        Garagem: <span class="notification entry-notification">Sem registo de atividade fora do normal</span> 
                         <button class="camera">Ver câmera</button>
                     </div>
                     <br>
@@ -40,9 +41,23 @@
 
             </div>
             <button id="lock">Trancar Porta de Casa</button>
+
+            <div id="alert-window">
+                Foi detatada uma invasão, por alguém não reconhecido, na casa! <br>
+                <br>
+                <div id="button-container">
+                    <a href="security.html"><button>Cancelar</button></a>
+                    <a href="security.html"><button>Ver câmeras</button></a>
+                    <a href="security.html"><button>Ligar à polícia</button></a>
+                    <a href="security.html"><button>Trancar portas</button></a>
+                </div>
+            </div>
+
         </main>
         <footer class="back">
             <a class="button" href="main.html">Página Principal</a>
+            <!-- only used to showcase how the notification would be -->
+            <img id="alert" src="imgs/exc_mark.png" alt="Alerta Intruso">
         </footer>
     </div>
 </body>
