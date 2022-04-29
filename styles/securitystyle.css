@@ -64,21 +64,25 @@ main{
 
 #alert-window{
     padding: 1vw;
-    position: absolute;
+    position: relative;
+    width: fit-content;
+    height: 20vh;
     background-color: #8099C3;
     border: 0.07em solid black;
-    align-self: center;
-    justify-self: center;
+    bottom: 37vh;
+    left: 10vw;
+    display: none;
 }
 
 #button-container{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+
 }
 
 #alert-window button{
-    height: fit-content;
+    height: 9vh;
     font-size: 0.7em;
 }
 
