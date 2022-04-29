@@ -2,7 +2,7 @@
 #container{
     margin: auto;
     color: black;
-    background: linear-gradient(to right, #8CA6DB, #B993D6);
+    background:  linear-gradient(315deg, #8d9dbb 0%, #7996C8 74%);
     font-size: 2vw;
     font-family: sans-serif;
     height: 97vh;
@@ -49,7 +49,7 @@ h1{
 
 .button {
     color: black;
-    background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB  51%, #B993D6  100%);
+    background-image: linear-gradient(to right, #7996C8 0%, #8d9dbb  51%, #7996C8  100%);
     margin: 10px;
     text-align: center;
     transition: 0.5s;

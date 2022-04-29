@@ -55,4 +55,31 @@ main{
     margin-left: 35vw;
 }
 
+#alert{
+    width: 7vw;
+    position: relative;
+    left: 25vw;
+    bottom: 1vh;
+}
+
+#alert-window{
+    padding: 1vw;
+    position: absolute;
+    background-color: #8099C3;
+    border: 0.07em solid black;
+    align-self: center;
+    justify-self: center;
+}
+
+#button-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#alert-window button{
+    height: fit-content;
+    font-size: 0.7em;
+}
+
 
