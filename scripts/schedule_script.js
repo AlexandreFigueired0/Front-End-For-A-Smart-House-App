@@ -3,6 +3,7 @@
 const DAY_INDEX = 3
 const CHECKBOX_STATES = "scheduleCheckBoxStates"
 const TIME_STATES = "scheduleTimeStates"
+const DEFAULT_TIME = "12:00"
 let checkBoxes = Array.from(document.querySelectorAll("input[type = checkbox]"))
 let checkBoxesState = [false,false,false,false,false,false,false]
 let storedStates = localStorage.getItem(CHECKBOX_STATES)
@@ -37,6 +38,7 @@ function saveTime(t){
 
 function clickCheckBox(c){
     showConfig(c)
+    checkTime(c)
     saveStates()
 }
 
@@ -54,5 +56,16 @@ function showConfig(cb){
     }
     else{
         respectiveBtn.style.visibility = "visible"
+    }
+}
+
+function checkTime(cb){
+    let divElem = cb.parentElement.parentElement
+    let day = divElem.id[DAY_INDEX]
+    let respectiveTime = document.getElementById("day".concat(day,"-in"))
+
+    // check if time is already set up if not put default time
+    if(respectiveTime.value == ""){
+        respectiveTime.value = DEFAULT_TIME
     }
 }
