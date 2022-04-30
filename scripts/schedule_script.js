@@ -67,5 +67,6 @@ function checkTime(cb){
     // check if time is already set up if not put default time
     if(respectiveTime.value == ""){
         respectiveTime.value = DEFAULT_TIME
+        saveTime(respectiveTime)
     }
 }
