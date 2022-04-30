@@ -27,7 +27,7 @@ if(storedStates){
 }
 
 checkBoxes.forEach(c => c.addEventListener("click",() => clickCheckBox(c)))
-timeInputs.forEach(t => t.addEventListener("focusout",()=> saveTime(t)))
+timeInputs.forEach(t => t.addEventListener("input",()=> saveTime(t)))
 
 function saveTime(t){
     let index = timeInputs.indexOf(t)

@@ -181,7 +181,7 @@ input:checked + .slider:before {
 }
 
 #loading-bar{
-  background-color: #A79AD8;
+  background-color: #8099C3;
   font-size: 0.9em;
   color: black;
   border: 1px solid black;
