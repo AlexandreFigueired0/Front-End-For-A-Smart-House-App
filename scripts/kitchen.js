@@ -1,25 +1,42 @@
 // localStorage.clear()
 const MAX_TEMPERATURE = 35
 const MIN_TEMPERATURE = 10
-const temperatureBtns = Array.from(document.getElementsByClassName("temp-controller"))
+let temperatureBtns = Array.from(document.getElementsByClassName("temp-controller"))
 let temperatureValue = document.getElementById("temperature-value")
 let storedTemperature = localStorage.getItem("kitchenTemperature")
 let lightsCheckBox = document.querySelector("#lights-btn input")
-let storedLightValue = localStorage.getItem("lightsValue") 
+let storedLightValue = localStorage.getItem("lightsValue")
+let blindsBtn = document.querySelector("#blinds-btn button")
+let storedBlindsBtnValue = localStorage.getItem("blindsValue")
+
+if(storedBlindsBtnValue){
+    blindsBtn.textContent = storedBlindsBtnValue
+}
 
 if(storedLightValue == "true"){
     lightsCheckBox.checked = true
 }
 
-
 if(storedTemperature){
     temperatureValue.textContent = storedTemperature
 }
 
-lightsCheckBox.addEventListener("click", clickCheckBox)
+blindsBtn.addEventListener("click", saveButtonText )
+lightsCheckBox.addEventListener("click", saveCheckBoxValue)
 temperatureBtns.forEach(b => b.addEventListener("click", () => changeTemperature(b)) )
 
-function clickCheckBox(){
+function saveButtonText(){
+    let value = blindsBtn.textContent
+    if(value == "Abrir"){
+        blindsBtn.textContent = "Fechar"
+    }
+    else{
+        blindsBtn.textContent = "Abrir"
+    }
+    localStorage.setItem("blindsValue", blindsBtn.textContent)
+}
+
+function saveCheckBoxValue(){
     let value = lightsCheckBox.checked
     localStorage.setItem("lightsValue", value ? "true" : "false")
 }
