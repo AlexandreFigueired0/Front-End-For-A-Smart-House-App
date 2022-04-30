@@ -27,7 +27,7 @@ main{
     grid-template-areas: 
         "temp-label temp"
         "lights-label lights-btn"
-        "cozinhar-label cozinhar-btn"
+        "meal-label meal-btn"
         "blinds-label blinds-btn";
 }
 
@@ -35,7 +35,7 @@ button:active{
     border-style: inset;
 }
 
-#temperature,#lights-btn, #cozinhar-btn, #blinds-btn {
+#temperature,#lights-btn, #meal-btn,#blinds-btn{
     justify-content: end;
 }
 
@@ -57,17 +57,17 @@ button:active{
     grid-area: lights-btn;
 }
 
-#cozinhar-label {
+#meal-label {
     border-top: 1px solid white;
-    grid-area: cozinhar-label;
+    grid-area: meal-label;
 }
 
-#cozinhar-btn {
+#meal-btn {
     border-top: 1px solid white;
-    grid-area: cozinhar-btn;
+    grid-area: meal-btn;
 }
 
-#blinds-label {
+#blinds-label{
     border-top: 1px solid white;
     grid-area: blinds-label;
 }
@@ -76,3 +76,4 @@ button:active{
     border-top: 1px solid white;
     grid-area: blinds-btn;
 }
+
