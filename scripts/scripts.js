@@ -1,10 +1,5 @@
-const temperatureBtns = Array.from(document.getElementsByClassName("temp-controller"))
-let temperatureValue = document.getElementById("temperature-value")
 let i = 0
 let width = 1;
-
-temperatureBtns.forEach(b => b.addEventListener("click", () => changeTemperature(b)) )
-
 
 function showLoading() {
     var elem = document.getElementById("loading-bar");
@@ -38,18 +33,3 @@ function move() {
     }
 }
 
-
-function changeTemperature(b){
-    let signal = b.textContent
-    let currentTemperature = parseInt(temperatureValue.textContent)
-    console.log(signal)
-
-    if(signal == "+" && currentTemperature<35){
-        currentTemperature++
-    }
-    else if(signal == "-" && currentTemperature>10){
-        currentTemperature--
-    }
-
-    temperatureValue.textContent = currentTemperature
-}
