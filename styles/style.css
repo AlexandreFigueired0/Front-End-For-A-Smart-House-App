@@ -2,6 +2,7 @@
 #container{
     margin: auto;
     color: black;
+    border: 1px solid black;
     background:  linear-gradient(315deg, #8d9dbb 0%, #7996C8 74%);
     font-size: 2vw;
     font-family: sans-serif;
