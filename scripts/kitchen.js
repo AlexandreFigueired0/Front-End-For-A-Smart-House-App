@@ -16,9 +16,7 @@ if(storedBlindsBtnValue){
     blindsBtn.textContent = storedBlindsBtnValue
 }
 
-if(storedLightValue == "true"){
-    lightsCheckBox.checked = true
-}
+lightsCheckBox.checked = storedLightValue == "true"
 
 if(storedTemperature){
     temperatureValue.textContent = storedTemperature
