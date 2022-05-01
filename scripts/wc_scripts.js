@@ -1,9 +1,8 @@
-// localStorage.clear()
 const MAX_TEMPERATURE = 35
 const MIN_TEMPERATURE = 10
-const TEMPERATURE_KEY = "kitchenTemperature"
-const LIGHTS_KEY = "kitchenLightsValue"
-const BLINDS_KEY = "kitchenBlindsValue"
+const TEMPERATURE_KEY = "wcTemperature"
+const LIGHTS_KEY = "wcLightsValue"
+const BLINDS_KEY = "wcBlindsValue"
 
 let temperatureBtns = Array.from(document.getElementsByClassName("temp-controller"))
 let temperatureValue = document.getElementById("temperature-value")
