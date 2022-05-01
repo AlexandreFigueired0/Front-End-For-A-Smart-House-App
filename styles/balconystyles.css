@@ -1,10 +1,11 @@
 #container{
     display: grid;
-    grid-template-columns: 15% auto;
-    grid-template-rows: 80% 20%;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
     grid-template-areas:
-         "menu main main"
-         "menu back back";
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
 }
 
 nav{

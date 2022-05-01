@@ -10,8 +10,17 @@
     <script src="scripts/schedule_script.js" async></script>
     <script src="scripts/scripts.js" async></script>
 </head>
-<body>
-    <div id = "container">  
+<body onload=startTime();>
+    <div id = "container">
+        
+        <div id="notbar">
+            &#128267; <span id='clock'></span>
+        </div>
+
+        <div id="c">
+            &#128274; &#128263; &#128233; &#128246; 
+        </div>
+
         <nav >
             <h2 class= "nav-menu sub-title">Divisões</h2>
             <ul id = "list">
@@ -25,7 +34,7 @@
         </nav>
 
         <main >
-            <h1>Horário da rega</h1> <br>
+            <h1>Horário da rega</h1> 
                 <div id = "schedule-container">
                     <div id="day1" class="grid-item">
                         <label class="switch">

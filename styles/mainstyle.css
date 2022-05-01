@@ -10,23 +10,6 @@
          "menu main security";
 }
 
-#notbar{
-    grid-area: notbar;
-    border-bottom: 1px solid white;
-}
-
-#c{
-    grid-area: c;
-    float:right;
-    border-bottom: 1px solid white;
-}
-
-#clock{
-    justify-self: end;
-    align-self: flex-end;
-}
-
-
 nav{
     grid-area: menu;
 }

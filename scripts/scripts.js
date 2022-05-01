@@ -1,6 +1,5 @@
 let i = 0
 let width = 1;
-
 function showLoading() {
     var elem = document.getElementById("loading-bar");
     elem.setAttribute('style', 'display:flex');
@@ -31,5 +30,19 @@ function move() {
             }
         }
     }
+}
+
+function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    m = checkTime(m);
+    document.getElementById('clock').innerHTML =  h + ":" + m;
+    setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
 }
 

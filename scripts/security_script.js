@@ -1,5 +1,4 @@
 const alertImg = document.getElementById("alert")
-console.log(alertImg)
 
 alertImg.addEventListener("click", showIntrusorAlert)
 
