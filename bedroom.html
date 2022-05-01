@@ -38,13 +38,23 @@
                     </label>
                 </span>
                 <br>
-                <!-- falta opcao para escolher temperatura -->
                 <span id="heat-bed-label" class="grid-item">Aquecer Cama</span>
                 <span id="heat-bed-btn" class="grid-item" ><button>Aquecer</button></span> 
                 <br>
                 <span id = "blinds-label" class="grid-item">Estores</span> 
                 <span id = "blinds-btn" class="grid-item"><button id="openOrClose">Abrir</button></span>
                 
+                <div id="warm-bed-window">
+                    Insira a temperatura que pretende para a cama <br>
+                    <div id="temp-container">
+                        <button class="bed-temp-controller">-</button><span id="bed-temperature-value">20</span>ºC<button class="bed-temp-controller">+</button>
+                    </div>
+                    <div id="buttons-container">
+                        <button id="cancel">Cancelar</button>
+                        <button id = "ok">Ok</button>
+                    </div>
+                </div>
+
             </div>
         </main>
         <footer class="back">
