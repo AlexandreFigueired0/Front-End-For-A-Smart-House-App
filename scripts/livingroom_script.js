@@ -1,22 +1,40 @@
 const MAX_TEMPERATURE = 35
 const MIN_TEMPERATURE = 10
-const TEMPERATURE_KEY = "livingRoomTemperature"
-const LIGHTS_KEY = "livingRoomLightsValue"
-const BLINDS_KEY = "livingRoomBlindsValue"
-const TV_KEY = "livingRoomTvValue"
-const PROJECTOR_KEY = "livingRoomProjectorValue"
+const TEMPERATURE_KEY = "livingroomTemperature"
+const LIGHTS_KEY = "livingroomLightsValue"
+const BLINDS_KEY = "livingroomBlindsValue"
+const TV_KEY = "livingroomTvValue"
+const PROJECTOR_KEY = "livingroomProjectorValue"
+const SOFA_TEMPERATURE_KEY = "livingroomSofaTemperature"
 
 let temperatureBtns = Array.from(document.getElementsByClassName("temp-controller"))
 let temperatureValue = document.getElementById("temperature-value")
 let storedTemperature = localStorage.getItem(TEMPERATURE_KEY)
+
 let lightsCheckBox = document.querySelector("#lights-btn input")
 let storedLightValue = localStorage.getItem(LIGHTS_KEY)
+
 let blindsBtn = document.querySelector("#blinds-btn button")
 let storedBlindsBtnValue = localStorage.getItem(BLINDS_KEY)
+
 let tvBtn = document.getElementById("tVOnOff")
 let storedTvValue = localStorage.getItem(TV_KEY)
+
 let projectorBtn = document.getElementById("projetorOnOff")
 let storedProjectorValue = localStorage.getItem(PROJECTOR_KEY)
+
+let warmSofaWindow = document.getElementById("warm-sofa-window")
+let warmSofaBtn = document.querySelector("#sofa-heat-btn button")
+let sofaTemperatureValue = document.getElementById("sofa-temperature-value")
+let sofaTemperatureBtns = Array.from(document.getElementsByClassName("sofa-temp-controller"))
+let storedSofaTemperature = localStorage.getItem(SOFA_TEMPERATURE_KEY)
+let okBtn = document.getElementById("ok")
+let cancelBtn = document.getElementById("cancel")
+
+
+if(storedSofaTemperature){
+    sofaTemperatureValue.textContent = storedSofaTemperature
+}
 
 if(storedProjectorValue){
     projectorBtn.textContent = storedProjectorValue
@@ -36,11 +54,43 @@ if(storedTemperature){
 
 lightsCheckBox.checked = storedLightValue == "true"
 
+okBtn.addEventListener("click",() => closeWarmSofaWindow(okBtn))
+cancelBtn.addEventListener("click",() => closeWarmSofaWindow(cancelBtn))
+sofaTemperatureBtns.forEach(b => b.addEventListener("click", () => changeSofaTemperature(b)) )
+warmSofaBtn.addEventListener("click", showWarmSofaWindow)
 projectorBtn.addEventListener("click", saveProjectorButtonText)
 tvBtn.addEventListener("click", saveTvButtonText)
 blindsBtn.addEventListener("click", saveBlindsButtonText )
 lightsCheckBox.addEventListener("click", saveCheckBoxValue)
 temperatureBtns.forEach(b => b.addEventListener("click", () => changeTemperature(b)) )
+
+function closeWarmSofaWindow(b){
+    if(b.textContent == "Ok"){
+        localStorage.setItem(SOFA_TEMPERATURE_KEY,sofaTemperatureValue.textContent)
+    }
+    else{
+        sofaTemperatureValue.textContent = localStorage.getItem(SOFA_TEMPERATURE_KEY) ? localStorage.getItem(SOFA_TEMPERATURE_KEY) : 20
+    }
+    warmSofaWindow.style.display = "none"
+}
+
+function changeSofaTemperature(b){
+    let signal = b.textContent
+    let currentTemperature = parseInt(sofaTemperatureValue.textContent)
+
+    if(signal == "+" && currentTemperature<MAX_TEMPERATURE){
+        currentTemperature++
+    }
+    else if(signal == "-" && currentTemperature>MIN_TEMPERATURE){
+        currentTemperature--
+    }
+
+    sofaTemperatureValue.textContent = currentTemperature
+}
+
+function showWarmSofaWindow(){
+    warmSofaWindow.style.display = "block"
+}
 
 function saveProjectorButtonText(){
     let value = projectorBtn.textContent

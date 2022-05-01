@@ -91,3 +91,29 @@ main{
     width: 100%;
     justify-content: end;
 }
+
+#warm-sofa-window{
+    border: 0.07em solid black;
+    position: absolute;
+    background-color: #8099C3;
+    justify-self: center;
+    align-self: center;
+    padding: 1vw;
+    margin-bottom: 20vh;
+    display: none;
+}
+
+#temp-container{
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+
+}
+
+.sofa-temp-controller{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 0.1vw;
+    margin: 0 0.5em;
+}

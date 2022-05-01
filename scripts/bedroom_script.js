@@ -47,7 +47,6 @@ temperatureBtns.forEach(b => b.addEventListener("click", () => changeTemperature
 
 function closeWarmBedWindow(b){
     if(b.textContent == "Ok"){
-        console.log("saved")
         localStorage.setItem(BED_TEMPERATURE_KEY,bedTemperatureValue.textContent)
     }
     else{
