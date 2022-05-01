@@ -11,3 +11,11 @@ function saveLightCheckBox(){
     let value = lightCheckBox.checked
     localStorage.setItem(LIGHTS_KEY, value ? "true" : "false")
 }
+
+function show() {
+    document.getElementById('image')
+            .style.display = "block";
+
+    document.getElementById('btnID')
+            .style.display = "none";
+}

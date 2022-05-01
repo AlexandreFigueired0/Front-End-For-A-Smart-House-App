@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/balconystyles.css">
     <script src="scripts/scripts.js" async></script>
     <script src="scripts/balcony_scripts.js" async></script>
+    <input type="image" src="http://example.com/path/to/image.png" />
     <title>Document</title>
 </head>
 <body>
@@ -42,7 +43,8 @@
                     <a id = "schedule-link" href="schedule.html" class="grid-item"><button>Ver</button></a>
                     <br>
                     <span id="camera-label" class="grid-item">Câmara</span> 
-                    <a href="#" id="camera-link" class="grid-item"><button>Ver</button></a>
+                    <img id="image" src="imgs/kitchen.jpg" alt="Camera" />
+                    <a href="#" id="camera-link" class="grid-item"><button type="button" onclick="show()" id="btnID">Ver</button></a>
                 </div>
         </main>
 
