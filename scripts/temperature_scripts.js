@@ -47,10 +47,10 @@ if(storedKitchenTemperature){
 temperatureBtns.forEach(b => b.addEventListener("click",() => changeTemperature(b)) )
 
 function changeTemperature(b){
-    let divison = b.classList[0].split("-")[0]
+    let division = b.classList[0].split("-")[0]
 
     let signal = b.textContent
-    let divisionTemperatureElem = document.getElementById(divison.concat("-temperature-value"))
+    let divisionTemperatureElem = document.getElementById(division.concat("-temperature-value"))
     let currentTemperature = parseInt(divisionTemperatureElem.textContent)
 
     if(signal == "+" && currentTemperature<MAX_TEMPERATURE){
@@ -61,7 +61,7 @@ function changeTemperature(b){
     }
 
     divisionTemperatureElem.textContent = currentTemperature
-    let key = divison.concat("Temperature")
+    let key = division.concat("Temperature")
     localStorage.setItem(key,divisionTemperatureElem.textContent)
 }
 
