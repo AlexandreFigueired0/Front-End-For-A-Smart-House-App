@@ -78,3 +78,6 @@ button:active{
     grid-area: blinds-btn;
 }
 
+.temp-controller {
+    cursor: pointer;
+}

@@ -91,6 +91,7 @@ button{
     border-radius: 10px;
     width: 4.5em;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a{ 
@@ -190,6 +191,7 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+  cursor: pointer;
 }
 
 .slider.round:before {
