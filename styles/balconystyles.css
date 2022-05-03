@@ -33,10 +33,6 @@ footer{
         "camera-label camera-link";
 }
 
-#image {
-    display: none;
-}
-
 #temperature-label{
     grid-area: temp-label;
 }
