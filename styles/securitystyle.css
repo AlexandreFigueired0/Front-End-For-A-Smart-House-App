@@ -45,6 +45,7 @@ main{
 .camera{
     height: fit-content;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 #lock{
@@ -54,6 +55,7 @@ main{
     align-self: flex-end;
     margin-top: 10vh;
     margin-left: 35vw;
+    cursor: pointer;
 }
 
 #alert{
@@ -87,4 +89,9 @@ main{
     font-size: 0.7em;
 }
 
+#alert {
+    box-shadow: 0 0 15px #eee;
+    border-radius: 1000px;
+    cursor: pointer;
+}
 
