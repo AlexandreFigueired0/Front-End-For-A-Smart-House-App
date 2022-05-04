@@ -111,7 +111,7 @@ function saveConfigs(b){
         configWindow.style.display = "none"
     }
     else{
-        window.alert("Preencha os campos todos")
+        window.alert("Preencha os campos todos, corretamente")
     }
 }
 
