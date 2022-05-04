@@ -14,8 +14,6 @@ if(storedList){
 let listElems = Array.from(document.querySelectorAll("#schedule-list li"))
 
 let checkBoxes = Array.from(list.querySelectorAll("#schedule-list input"))
-console.log(checkBoxes)
-console.log(listElems)
 let checkBoxStates = []
 for(let i = 0; i<listElems.length ; i++){
     checkBoxStates.push(false)
@@ -26,6 +24,7 @@ let addBtn = document.getElementById("add")
 
 let configWindow = document.getElementById("config-window")
 
+let okBtn = document.getElementById("ok")
 
 
 if(storedCount){
@@ -41,12 +40,11 @@ if(storedCheckBoxStates){
 
 addBtn.addEventListener("click", addNewSchedule)
 checkBoxes.forEach(c => c.addEventListener("click", () => clickCheckBox(c)))
+okBtn.addEventListener("click",() => saveConfigs(okBtn))
 
 
-async function addNewSchedule(){
+function addNewSchedule(){
     showConfigsWindow();
-    let okBtn = document.getElementById("ok")
-    okBtn.addEventListener("click",() => saveConfigs(okBtn))
 }
 
 
@@ -94,6 +92,7 @@ function saveConfigs(b){
         listElems.push(listItem)
         localStorage.setItem(LIST_KEY,list.innerHTML)
 
+        resetFields(hours,mins,duration,days)
         configWindow.style.display = "none"
     }
     else{
@@ -101,6 +100,14 @@ function saveConfigs(b){
     }
 }
 
+function resetFields(hours,mins,duration,days){
+    hours.value = ""
+    mins.value = ""
+    duration.value = ""
+    for(let i = 0; i<days.length;i++){
+        days[i].checked = false
+    }
+}
 
 function checkedDays(l){
     let res = []
