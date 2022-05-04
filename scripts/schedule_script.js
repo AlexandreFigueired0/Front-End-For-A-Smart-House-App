@@ -27,8 +27,6 @@ let addBtn = document.getElementById("add")
 let configWindow = document.getElementById("config-window")
 let okBtn = document.getElementById("ok")
 
-let okBtn = document.getElementById("ok")
-
 let hours = configWindow.querySelector("#hour")
 let mins = configWindow.querySelector("#min")
 let duration = configWindow.querySelector("#dur")
