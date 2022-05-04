@@ -2,9 +2,6 @@
 const CHECKBOX_STATES = "scheduleCheckBoxStates"
 const COUNTER_KEY = "counter"
 const LIST_KEY = "scheduleList"
-const HOURS_LIMIT = 23
-const MINS_LIMIT = 59
-const DUR_LIMIT = 30
 
 let count = 3
 let storedCount = localStorage.getItem(COUNTER_KEY)
@@ -43,19 +40,22 @@ if(storedCheckBoxStates){
     }
 }
 
-hours.addEventListener("input",() =>checkLimit(hours,HOURS_LIMIT))
-mins.addEventListener("input",()=>checkLimit(mins,MINS_LIMIT))
-duration.addEventListener("input",()=>checkLimit(duration,DUR_LIMIT))
+hours.addEventListener("input",() =>checkLimit(hours))
+mins.addEventListener("input",()=>checkLimit(mins))
+duration.addEventListener("input",()=>checkLimit(duration))
 addBtn.addEventListener("click", addNewSchedule)
 checkBoxes.forEach(c => c.addEventListener("click", () => clickCheckBox(c)))
 okBtn.addEventListener("click",() => saveConfigs(okBtn))
 
 function checkLimit(e,limit){
     let val = parseInt(e.value)
-    if(val>limit){
-        e.value = limit
+    if(val>e.max){
+        e.value = e.max
     }
 
+    if(val<e.min){
+        e.value = e.min;
+    }
 }
 
 function addNewSchedule(){
