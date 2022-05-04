@@ -2,6 +2,9 @@
 const CHECKBOX_STATES = "scheduleCheckBoxStates"
 const COUNTER_KEY = "counter"
 const LIST_KEY = "scheduleList"
+const HOURS_LIMIT = 23
+const MINS_LIMIT = 59
+const DUR_LIMIT = 30
 
 let count = 3
 let storedCount = localStorage.getItem(COUNTER_KEY)
@@ -21,10 +24,14 @@ for(let i = 0; i<listElems.length ; i++){
 let storedCheckBoxStates = localStorage.getItem(CHECKBOX_STATES)
 
 let addBtn = document.getElementById("add")
-
 let configWindow = document.getElementById("config-window")
+let okBtn = document.getElementById("ok")
 
 let okBtn = document.getElementById("ok")
+
+let hours = configWindow.querySelector("#hour")
+let mins = configWindow.querySelector("#min")
+let duration = configWindow.querySelector("#dur")
 
 
 if(storedCount){
@@ -38,10 +45,20 @@ if(storedCheckBoxStates){
     }
 }
 
+hours.addEventListener("input",() =>checkLimit(hours,HOURS_LIMIT))
+mins.addEventListener("input",()=>checkLimit(mins,MINS_LIMIT))
+duration.addEventListener("input",()=>checkLimit(duration,DUR_LIMIT))
 addBtn.addEventListener("click", addNewSchedule)
 checkBoxes.forEach(c => c.addEventListener("click", () => clickCheckBox(c)))
 okBtn.addEventListener("click",() => saveConfigs(okBtn))
 
+function checkLimit(e,limit){
+    let val = parseInt(e.value)
+    if(val>limit){
+        e.value = limit
+    }
+
+}
 
 function addNewSchedule(){
     showConfigsWindow();
@@ -55,11 +72,6 @@ function saveConfigs(b){
         localStorage.setItem(COUNTER_KEY,count)
         let days = Array.from(configWindow.querySelectorAll(".day"))
 
-
-        let hours = configWindow.querySelector("#hour")
-        let mins = configWindow.querySelector("#min")
-        let duration = configWindow.querySelector("#dur")
-        let timeUnit = configWindow.querySelector("#time-unit")
         let listItem = document.createElement("li")
         let timeSpan = document.createElement("span")
         let daysSpan = document.createElement("span")
@@ -91,6 +103,11 @@ function saveConfigs(b){
         list.appendChild(listItem)
         listElems.push(listItem)
         localStorage.setItem(LIST_KEY,list.innerHTML)
+
+        checkBoxStates.push(false)
+        checkBoxes.push(cb)
+        cb.addEventListener("click", () => clickCheckBox(cb))
+        localStorage.setItem(CHECKBOX_STATES, JSON.stringify(checkBoxStates))
 
         resetFields(hours,mins,duration,days)
         configWindow.style.display = "none"
