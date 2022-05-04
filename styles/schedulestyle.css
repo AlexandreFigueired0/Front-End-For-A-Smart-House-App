@@ -23,127 +23,67 @@ main{
     justify-content: space-evenly;
 }
 
-input[type="time"]{
-    padding: 0;
-    font-size: 0.8em;
+
+#schedule-list{
+    margin: 0 4vw;
+    padding: 0 1vw;
+    font-size: 1.3em;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 45vh;
+}
+#schedule-list li:not(:first-child){
+    border-top: 1px solid white;
 }
 
-#schedule-container{
-    display: grid;
-    grid-template-rows: repeat(7,auto);
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
-        "day1 day1-in config1"
-        "day2 day2-in config2"
-        "day3 day3-in config3"
-        "day4 day4-in config4"
-        "day5 day5-in config5"
-        "day6 day6-in config6"
-        "day7 day7-in config7";
-    justify-content: center;
-    row-gap: 1vh;
-    column-gap: 10vw;
-}
-
-#schedule-container > div{
-    height: 1vw;
+#schedule-list li{
+    padding: 2vh 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-input[type="checkbox"]{
-    vertical-align: middle;
+.time{
+    display: flex;
+    flex-direction: column;
 }
 
-main > div{
+.days{
+    font-size: 0.5em;
+}
+
+#add{
+    position: fixed;
+    top: 70vh;
+    left: 54vw;
+}
+
+#add button{
+    font-size: 2em;
+    height: fit-content;
+    width: 1.5em;
+    border-radius: 1em;
+}
+
+#config-window{
+    padding-bottom: 1em;
     text-align: center;
-}
-
-/* aligning checkboxes */
-input[type = checkbox]{
+    width: 30vw;
+    background-color: #8099C3;
+    border: 0.07em solid black;
     position: relative;
-    top: 0.1vw;
+    bottom: 50vh;
+    left: 25vw;
+    display: none;
 }
 
-#day1{
-    grid-area: day1;
-}
-#day2{
-    grid-area: day2;
-}
-#day3{
-    grid-area: day3;
-}
-#day4{
-    grid-area: day4;
-}
-#day5{
-    grid-area: day5;
-}
-#day6{
-    grid-area: day6;
-}
-#day7{
-    grid-area: day7;
+#config-window div{
+    margin: 2vh 0;
 }
 
-#day1-in{
-    grid-area: day1-in;
-}
-#day2-in{
-    grid-area: day2-in;
-}
-#day3-in{
-    grid-area: day3-in;
-}
-#day4-in{
-    grid-area: day4-in;
-}
-#day5-in{
-    grid-area: day5-in;
-}
-#day6-in{
-    grid-area: day6-in;
-}
-#day7-in{
-    grid-area: day7-in;
-}
-
-#config1{
-    grid-area: config1;
-}
-
-#config2{
-    grid-area: config2;
-}
-
-#config3{
-    grid-area: config3;
-}
-
-#config4{
-    grid-area: config4;
-}
-
-#config5{
-    grid-area: config5;
-}
-
-#config6{
-    grid-area: config6;
-}
-
-#config7{
-    grid-area: config7;
-}
-
-button{
-    height: max-content;
-}
-
-.config{
-    padding: 0;
-    width: 6em;
-    visibility: hidden;
+input[type = number]{
+    font-size: 0.6em;
+    position: relative;
+    bottom: 0.7vh;
 }
