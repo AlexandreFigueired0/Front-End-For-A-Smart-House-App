@@ -236,6 +236,31 @@ input:checked + .slider:before {
   justify-content: space-evenly;
 }
 
+#alert-window{
+  padding: 2vw;
+  position: absolute;
+  width: 58vw;
+  height: 19vh;
+  background-color: #8099C3;
+  border: 0.07em solid black;
+  bottom: 50vh;
+  left: 20vw;
+}
+
+#alert-window #buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+
+}
+
+#alert-window button{
+  height: 9vh;
+  font-size: 0.7em;
+}
+
+
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {

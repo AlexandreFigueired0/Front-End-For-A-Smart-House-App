@@ -1,5 +1,8 @@
 let i = 0
 let width = 1;
+
+setTimeout(showIntrusorAlert,1000*60)
+
 function showLoading() {
     var elem = document.getElementById("loading-bar");
     elem.setAttribute('style', 'display:flex');
@@ -45,3 +48,37 @@ function checkTime(i) {
     return i;
 }
 
+
+function showIntrusorAlert(){
+    let windowDiv = document.createElement("div")
+    let buttonsDiv = document.createElement("div")
+    let cancel = document.createElement("button")
+    let cameras = document.createElement("button")
+    let callPolice = document.createElement("button")
+    let lockDoors = document.createElement("button")
+    let setTimer = () => setTimeout(showIntrusorAlert,1000*60)
+    let goToSecurity = () =>{ 
+        location = "security.html"
+        setTimer()
+    }
+
+    cancel.textContent = "Cancelar"
+    cancel.onclick =() => {
+        windowDiv.style.display = "none"
+        setTimer()
+    }
+    cameras.textContent = "Ver câmeras"
+    cameras.onclick = goToSecurity
+    callPolice.textContent = "Ligar à polícia"
+    callPolice.onclick = goToSecurity
+    lockDoors.textContent = "Trancar Portas"
+    lockDoors.onclick = goToSecurity
+    buttonsDiv.id = "buttons"
+    windowDiv.id = "alert-window"
+
+    buttonsDiv.append(cancel,cameras,callPolice,lockDoors)
+    windowDiv.append("Foi detatada uma invasão, por alguém não reconhecido, na casa!",buttonsDiv)
+    document.getElementById("container").appendChild(windowDiv)
+    console.log("ola")
+
+}
