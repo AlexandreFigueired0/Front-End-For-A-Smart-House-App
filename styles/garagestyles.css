@@ -88,8 +88,8 @@ main{
     display: none;
     background-color: #8099C3;
     border: 0.07em solid black;
-    align-self: center;
     justify-self: center;
+    bottom: 50vh;
 }
 
 #button-container{

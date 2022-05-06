@@ -1,9 +1,9 @@
 const TIME_OUT = 1000*60
 
 let i = 0
-let width = 1;
+let width = 1
 
-setTimeout(showIntrusorAlert,1000*60)
+setTimeout(showIntrusorAlert,TIME_OUT)
 
 function showLoading() {
     var elem = document.getElementById("loading-bar");
@@ -58,7 +58,7 @@ function showIntrusorAlert(){
     let cameras = document.createElement("button")
     let callPolice = document.createElement("button")
     let lockDoors = document.createElement("button")
-    let setTimer = () => setTimeout(showIntrusorAlert,1000*60)
+    let setTimer = () => setTimeout(showIntrusorAlert,TIME_OUT*2)
     let goToSecurity = () =>{ 
         location = "security.html"
         setTimer()
