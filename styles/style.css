@@ -244,7 +244,7 @@ input:checked + .slider:before {
   background-color: #8099C3;
   border: 0.07em solid black;
   bottom: 50vh;
-  left: 20vw;
+  left: 25vw;
 }
 
 #alert-window #buttons{

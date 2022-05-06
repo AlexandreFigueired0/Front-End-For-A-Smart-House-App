@@ -102,3 +102,7 @@ a img{
 .back a{
     font-size: 0.5em;
 }
+
+#alert-window{
+    left: 20vw;
+}

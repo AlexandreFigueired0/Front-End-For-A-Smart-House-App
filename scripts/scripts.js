@@ -1,3 +1,5 @@
+const TIME_OUT = 1000*60
+
 let i = 0
 let width = 1;
 
@@ -79,6 +81,5 @@ function showIntrusorAlert(){
     buttonsDiv.append(cancel,cameras,callPolice,lockDoors)
     windowDiv.append("Foi detatada uma invasão, por alguém não reconhecido, na casa!",buttonsDiv)
     document.getElementById("container").appendChild(windowDiv)
-    console.log("ola")
 
 }
